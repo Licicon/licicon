@@ -19,14 +19,14 @@
             --divider:rgba(212, 175, 55, 0.25); 
         }
 
-        /* ===== FIX MOVIL (evita desplazamiento lateral) ===== */
+        /* ===== FIX MOVIL ===== */
         html, body{
             overflow-x: hidden;
             max-width: 100%;
         }
         *, *::before, *::after{ box-sizing: border-box; }
 
-        body{ font-family:'Montserrat',sans-serif; background:var(--deep-slate); color:#fff; overflow-x:hidden; }
+        body{ font-family:'Montserrat',sans-serif; background:var(--deep-slate); color:#fff; }
         .serif-title{font-family:'Cinzel',serif;}
         
         /* PRELOADER */
@@ -37,7 +37,7 @@
             opacity: 1; transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .loader-logo { 
-            width: 450px; margin-bottom: 30px; 
+            width: min(450px, 80%); margin-bottom: 30px; 
             opacity: 0; animation: fadeInLogo 2s forwards ease-in-out, pulseLogo 3s infinite 2s ease-in-out; 
         }
         @keyframes fadeInLogo { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -48,24 +48,24 @@
         @keyframes load { to { width: 100%; } }
 
         /* NAV */
-        nav { background: rgba(5, 7, 10, 0.97); backdrop-blur-xl; border-bottom: 1px solid var(--divider); height: 100px; }
+        nav { background: rgba(5, 7, 10, 0.97); backdrop-filter: blur(15px); border-bottom: 1px solid var(--divider); height: 80px; transition: 0.3s; }
+        @media (min-width: 1024px) { nav { height: 100px; } }
+
         .nav-link { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: inline-block; }
         .nav-link:hover { transform: translateY(-4px); color: var(--accent-gold) !important; filter: drop-shadow(0 0 5px rgba(214, 175, 55, 0.4)); }
 
         .btn-luxe {
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 12px 28px;
+            padding: 10px 20px;
             font-size: 9px;
             letter-spacing: 0.3em;
             font-weight: 700;
             text-transform: uppercase;
             transition: all 0.5s ease;
-            position: relative;
-            overflow: hidden;
             background: transparent;
         }
-        .btn-luxe:hover { background: var(--accent-gold); color: #000; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); transform: translateY(-2px); }
+        .btn-luxe:hover { background: var(--accent-gold); color: #000; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
 
         .gold-divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--divider), transparent); }
 
@@ -77,7 +77,7 @@
             cursor: pointer;
             position: relative;
         }
-        .blue-gold-card:hover { transform: translateY(-12px); border-color: var(--accent-gold); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.1); }
+        .blue-gold-card:hover { transform: translateY(-12px); border-color: var(--accent-gold); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); }
         
         .card-indicator {
             font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold);
@@ -88,73 +88,33 @@
         .plus-icon { position: absolute; top: 15px; right: 15px; font-size: 12px; color: var(--accent-gold); opacity: 0.3; transition: 0.4s; }
         .blue-gold-card:hover .plus-icon { opacity: 1; transform: rotate(90deg); }
 
-        /* ANIMACIÓN METODOLOGÍA */
+        /* METODOLOGÍA */
         .step-node { transition: 0.5s ease; }
         .step-item:hover .step-node { background: var(--accent-gold); box-shadow: 0 0 15px var(--accent-gold); }
-        .step-item:hover h4 { color: #fff; transform: translateX(10px); }
-        .step-item h4 { transition: 0.4s ease; }
 
         .asset-photo {
             filter: grayscale(100%) brightness(50%);
             border: 1px solid rgba(212, 175, 55, 0.1);
-            transition: 1.2s ease-in-out; width: 100%; height: 500px; object-fit: cover;
+            transition: 1.2s ease-in-out; width: 100%; height: 400px; object-fit: cover;
         }
+        @media (min-width: 1024px) { .asset-photo { height: 500px; } }
         .asset-photo:hover { filter: grayscale(0%) brightness(90%); border-color: var(--accent-gold); }
 
-        /* NUEVO CONTENEDOR DE LIBRO BOSS */
-        .book-container {
-            perspective: 1000px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-        }
+        /* LIBRO BOSS */
+        .book-container { perspective: 1000px; display: flex; justify-content: center; align-items: center; padding: 20px; }
         .book-wrapper {
-            width: 320px;
-            height: 450px;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateY(-20deg) rotateX(10deg);
+            width: min(320px, 80vw); height: 450px; position: relative;
+            transform-style: preserve-3d; transform: rotateY(-20deg) rotateX(10deg);
             transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
-        .book-container:hover .book-wrapper {
-            transform: rotateY(0deg) rotateX(0deg) scale(1.05);
-        }
+        .book-container:hover .book-wrapper { transform: rotateY(0deg) rotateX(0deg) scale(1.05); }
         .book-cover {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #0f172a 0%, #05070a 100%);
-            border: 1px solid var(--accent-gold);
-            box-shadow: -15px 15px 40px rgba(0,0,0,0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
-            position: relative;
-            z-index: 2;
+            width: 100%; height: 100%; background: linear-gradient(135deg, #0f172a 0%, #05070a 100%);
+            border: 1px solid var(--accent-gold); box-shadow: -15px 15px 40px rgba(0,0,0,0.8);
+            display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; position: relative; z-index: 2;
         }
-        .book-spine {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 40px;
-            height: 100%;
-            background: #05070a;
-            transform: rotateY(-90deg) translateX(-20px);
-            border: 1px solid var(--accent-gold);
-            z-index: 1;
-        }
-        .book-inner-shadow {
-            position: absolute;
-            top: 0; left: 10px; width: 2px; height: 100%;
-            background: rgba(212, 175, 55, 0.3);
-            box-shadow: 2px 0 10px rgba(0,0,0,0.5);
-        }
+        .book-spine { position: absolute; left: 0; top: 0; width: 40px; height: 100%; background: #05070a; transform: rotateY(-90deg) translateX(-20px); border: 1px solid var(--accent-gold); z-index: 1; }
 
-        .social-icon-gold { color: var(--accent-gold); font-size: 1.8rem; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); opacity: 0.7; }
-        .social-icon-gold:hover { transform: translateY(-5px) scale(1.2); opacity: 1; filter: drop-shadow(0 0 8px var(--accent-gold)); }
-        
         .gold-gradient-text {
             background: linear-gradient(to right, var(--accent-gold), var(--light-gold), var(--accent-gold));
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -163,29 +123,19 @@
         /* MODAL */
         .modal {
             display: none; position: fixed; z-index: 100; left: 0; top: 0; 
-            width: 100%; height: 100%; background-color: rgba(5, 7, 10, 0.95);
-            backdrop-filter: blur(15px);
+            width: 100%; height: 100%; background-color: rgba(5, 7, 10, 0.98);
+            backdrop-filter: blur(15px); overflow-y: auto;
         }
         .modal-content {
-            background: var(--deep-slate); margin: 5% auto; padding: 60px 40px; 
+            background: var(--deep-slate); margin: 5% auto; padding: 40px 20px; 
             border: 1px solid var(--divider); width: 90%; max-width: 550px; position: relative;
-            box-shadow: 0 0 50px rgba(0,0,0,0.9); text-align: center;
         }
-        .close-modal { position: absolute; right: 20px; top: 15px; color: var(--accent-gold); cursor: pointer; font-size: 14px; letter-spacing: 2px; }
 
-        /* Evita desbordes por 100vw en móviles */
-        section{ max-width: 100vw; overflow-x: clip; }
-
-        /* HERO BG: en móvil evita background-attachment:fixed (causa drift en Android). */
-        .hero-bg{
-            background-attachment: scroll !important;
-        }
-        @media (min-width: 1024px){
-            .hero-bg{ background-attachment: fixed !important; }
-        }
+        /* MENU MOBILE OVERLAY */
+        #mobile-menu { transform: translateY(-100%); transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        #mobile-menu.open { transform: translateY(0); }
     </style>
 </head>
-
 <body>
 
 <div id="preloader">
@@ -194,7 +144,8 @@
 </div>
 
 <nav class="fixed w-full z-50 px-6 md:px-20 py-2 flex justify-between items-center">
-    <a href="#"><img src="logo.png" alt="LICICON" style="height: 85px;"></a>
+    <a href="#"><img src="logo.png" alt="LICICON" class="h-[50px] md:h-[85px]"></a>
+    
     <div class="hidden lg:flex space-x-12 text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 items-center">
         <a href="#que-hacemos" class="nav-link">Qué Hacemos</a>
         <a href="#especializacion" class="nav-link">Especialización</a>
@@ -202,17 +153,28 @@
         <a href="#metodologia" class="nav-link">Metodología</a>
         <a href="mailto:contacto@licicon.com" class="btn-luxe ml-4">Solicitar Diagnóstico</a>
     </div>
+
+    <button class="lg:hidden text-gold text-2xl" onclick="toggleMenu(true)"><i class="fas fa-bars"></i></button>
 </nav>
 
-<section class="hero-bg relative h-screen flex items-center px-10 md:px-24" style="background: linear-gradient(to bottom, rgba(5,7,10,0.85), rgba(5,7,10,1)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') center/cover;">
-    <div class="max-w-6xl" data-aos="fade-up">
+<div id="mobile-menu" class="fixed inset-0 bg-black z-[100] flex flex-col justify-center items-center space-y-8">
+    <button class="absolute top-8 right-8 text-gold text-3xl" onclick="toggleMenu(false)">&times;</button>
+    <a href="#que-hacemos" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Qué Hacemos</a>
+    <a href="#especializacion" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Especialización</a>
+    <a href="#sectores" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Sectores</a>
+    <a href="#metodologia" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Metodología</a>
+    <a href="mailto:contacto@licicon.com" class="btn-luxe">Diagnóstico</a>
+</div>
+
+<section class="relative min-h-screen flex items-center px-6 md:px-24" style="background: linear-gradient(to bottom, rgba(5,7,10,0.85), rgba(5,7,10,1)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') center/cover;">
+    <div class="max-w-6xl pt-20" data-aos="fade-up">
         <div class="w-24 h-1 mb-10 bg-gold" style="background:var(--accent-gold)"></div>
-        <h2 class="text-gold text-xs tracking-[.6em] uppercase font-bold mb-6 opacity-80" style="color:var(--accent-gold)">Smart Asset Management & Compliance</h2>
-        <h1 class="serif-title text-5xl md:text-[80px] leading-[0.95] mb-10">
+        <h2 class="text-gold text-[10px] md:text-xs tracking-[.6em] uppercase font-bold mb-6 opacity-80" style="color:var(--accent-gold)">Smart Asset Management & Compliance</h2>
+        <h1 class="serif-title text-3xl md:text-[80px] leading-tight md:leading-[0.95] mb-10">
             Arquitectura de <span class="gold-gradient-text">Cumplimiento</span><br>
             <span class="text-slate-200">Institucional.</span>
         </h1>
-        <p class="max-w-4xl text-slate-400 text-lg md:text-xl font-light leading-relaxed border-l-2 border-gold/30 pl-8 italic">
+        <p class="max-w-4xl text-slate-400 text-base md:text-xl font-light leading-relaxed border-l-2 border-gold/30 pl-8 italic">
             LICICON es una firma especializada en gestión estratégica de activos, cumplimiento normativo y optimización institucional, enfocada en proteger el valor patrimonial de empresas, inversiones y operaciones comerciales.
         </p>
     </div>
@@ -220,15 +182,15 @@
 
 <div class="gold-divider"></div>
 
-<section id="que-hacemos" class="px-10 md:px-24 py-32">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+<section id="que-hacemos" class="px-6 md:px-24 py-20 md:py-32">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
         <div data-aos="fade-right">
-            <h2 class="serif-title text-4xl mb-10 uppercase tracking-widest">Qué <span class="gold-gradient-text">Hacemos</span></h2>
-            <p class="text-slate-400 text-lg leading-relaxed mb-10 font-light">
+            <h2 class="serif-title text-3xl md:text-4xl mb-10 uppercase tracking-widest">Qué <span class="gold-gradient-text">Hacemos</span></h2>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-light">
                 Diseñamos e implementamos modelos institucionales de gestión orientados a proteger el valor de los activos empresariales y optimizar su operación. Trabajamos con organizaciones que requieren orden, control y cumplimiento bajo estándares internacionales.
             </p>
-            <div class="blue-gold-card p-12 text-center">
-                <p class="serif-title text-2xl italic opacity-80">"LICICON no solo gestiona activos: estructura sistemas institucionales que garantizan su permanencia."</p>
+            <div class="blue-gold-card p-8 md:p-12 text-center">
+                <p class="serif-title text-xl md:text-2xl italic opacity-80">"LICICON no solo gestiona activos: estructura sistemas institucionales que garantizan su permanencia."</p>
             </div>
         </div>
         <div data-aos="fade-left">
@@ -239,13 +201,13 @@
 
 <div class="gold-divider"></div>
 
-<section id="sectores" class="px-10 md:px-24 py-32 bg-slate-950/20">
+<section id="sectores" class="px-6 md:px-24 py-20 md:py-32 bg-slate-950/20">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <h2 class="serif-title text-4xl mb-4 uppercase tracking-widest">Diversificación de <span class="gold-gradient-text">Activos</span></h2>
+            <h2 class="serif-title text-3xl md:text-4xl mb-4 uppercase tracking-widest">Diversificación de <span class="gold-gradient-text">Activos</span></h2>
             <p class="text-slate-600 tracking-[.5em] uppercase text-[10px] font-bold">Gobernanza Multidominio</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="blue-gold-card p-12 text-center" data-aos="fade-up" onclick="openSector('corp')">
                 <i class="fas fa-plus plus-icon"></i>
                 <i class="fas fa-building-columns text-5xl mb-8"></i>
@@ -274,28 +236,12 @@
     </div>
 </section>
 
-<div id="sectorModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeSector()">Cerrar [x]</span>
-        <div class="w-12 h-[1px] bg-gold mx-auto mb-8" style="background:var(--accent-gold)"></div>
-        <i id="m-icon" class="fas text-4xl mb-6" style="color:var(--accent-gold)"></i>
-        <h3 id="m-title" class="serif-title text-2xl mb-6 uppercase tracking-[0.2em] gold-gradient-text"></h3>
-        <p id="m-desc" class="text-slate-400 text-sm font-light leading-loose mb-8"></p>
-        <div class="text-left bg-slate-900/50 p-6 border border-gold/5">
-            <h5 class="text-[10px] uppercase tracking-widest text-gold mb-4">Aplicaciones:</h5>
-            <ul id="m-list" class="text-[11px] text-slate-500 space-y-2 uppercase tracking-wider"></ul>
-        </div>
-    </div>
-</div>
-
-<div class="gold-divider"></div>
-
-<section id="especializacion" class="px-10 md:px-24 py-32">
+<section id="especializacion" class="px-6 md:px-24 py-20 md:py-32">
     <div class="max-w-7xl mx-auto text-center">
-        <h2 class="serif-title text-5xl mb-6 uppercase tracking-widest">Líneas <span class="gold-gradient-text">Estratégicas</span></h2>
+        <h2 class="serif-title text-3xl md:text-5xl mb-6 uppercase tracking-widest">Líneas <span class="gold-gradient-text">Estratégicas</span></h2>
         <p class="text-slate-600 tracking-[.5em] uppercase text-[11px] font-bold mb-20">Áreas de Especialización</p>
-        <div class="grid md:grid-cols-3 gap-10">
-            <div class="blue-gold-card p-14 h-full text-left" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up">
                 <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Asset Management</h3>
                 <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
                     <li>· Administración Inmobiliaria</li>
@@ -304,11 +250,9 @@
                     <li>· Optimización Financiera</li>
                 </ul>
             </div>
-            <div class="blue-gold-card p-14 h-full text-left" data-aos="fade-up" data-aos-delay="100">
+            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Compliance</h3>
-                <div class="mb-6">
-                    <p class="text-[9px] text-gold/60 tracking-widest mb-4">ISO 27001 | 31000 | 9001 | 37301</p>
-                </div>
+                <div class="mb-6"><p class="text-[9px] text-gold/60 tracking-widest mb-4">ISO 27001 | 31000 | 9001 | 37301</p></div>
                 <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
                     <li>· Diagnóstico Normativo</li>
                     <li>· Implementación de Sistemas</li>
@@ -316,7 +260,7 @@
                     <li>· Protección Jurídica</li>
                 </ul>
             </div>
-            <div class="blue-gold-card p-14 h-full text-left" data-aos="fade-up" data-aos-delay="200">
+            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Optimización</h3>
                 <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
                     <li>· Digitalización Administrativa</li>
@@ -329,60 +273,48 @@
     </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<section id="metodologia" class="px-10 md:px-24 py-32">
+<section id="metodologia" class="px-6 md:px-24 py-20 md:py-32">
     <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-24">
-            <h2 class="serif-title text-4xl mb-4 uppercase tracking-widest">Metodología de <span class="gold-gradient-text">Trabajo</span></h2>
+        <div class="text-center mb-16 md:mb-24">
+            <h2 class="serif-title text-3xl md:text-4xl mb-4 uppercase tracking-widest">Metodología de <span class="gold-gradient-text">Trabajo</span></h2>
             <p class="text-slate-600 tracking-[.5em] uppercase text-[10px] font-bold">Rigor en cada etapa</p>
         </div>
-        
-        <div class="grid md:grid-cols-2 gap-20 items-start">
-            <div class="space-y-16">
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-10 relative" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
+        <div class="grid md:grid-cols-2 gap-16 md:gap-20 items-start">
+            <div class="space-y-12 md:space-y-16">
+                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left">
+                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold"></div>
                     <div>
                         <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider">01. Diagnóstico</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Análisis de estructura documental, cumplimiento normativo y exposición a riesgos operativos.</p>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">Análisis de estructura documental, cumplimiento normativo y riesgos operativos.</p>
                     </div>
                 </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-10 relative" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
+                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold"></div>
                     <div>
                         <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider">02. Arquitectura de Cumplimiento</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Diseño de la estructura jurídica, controles administrativos y tecnología operativa necesaria.</p>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">Diseño de la estructura jurídica, controles y tecnología necesaria.</p>
                     </div>
                 </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-10 relative" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
+                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold"></div>
                     <div>
                         <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider">03. Implementación</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Establecimiento de flujos documentales, procesos administrativos y controles operativos reales.</p>
-                    </div>
-                </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-10 relative" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
-                    <div>
-                        <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider">04. Monitoreo</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Seguimiento continuo para optimizar procesos y fortalecer la gobernanza institucional.</p>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">Establecimiento de flujos documentales y procesos operativos reales.</p>
                     </div>
                 </div>
             </div>
-            <div class="sticky top-32" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="hidden md:block sticky top-32" data-aos="zoom-in">
                 <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070" class="asset-photo rounded shadow-2xl">
             </div>
         </div>
     </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<section id="filosofia" class="bg-slate-950/20 py-32 px-10 md:px-24">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+<section id="filosofia" class="bg-slate-950/20 py-20 md:py-32 px-6 md:px-24">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
         <div data-aos="fade-right">
-            <h3 class="serif-title text-4xl mb-10 uppercase tracking-widest">Filosofía</h3>
-            <p class="text-slate-400 text-2xl font-light leading-relaxed italic border-l-2 border-gold/30 pl-10 mb-10">
+            <h3 class="serif-title text-3xl md:text-4xl mb-10 uppercase tracking-widest">Filosofía</h3>
+            <p class="text-slate-400 text-xl md:text-2xl font-light leading-relaxed italic border-l-2 border-gold/30 pl-10 mb-10">
                 "La protección de un activo no depende únicamente de su propiedad jurídica, sino de la estructura institucional que lo respalda. Construimos estructuras sólidas que aseguran su permanencia."
             </p>
             <p class="text-slate-500 uppercase tracking-[0.3em] text-[10px] font-bold">LICICON Private Architecture</p>
@@ -391,58 +323,52 @@
             <div class="book-wrapper">
                 <div class="book-spine"></div>
                 <div class="book-cover">
-                    <div class="book-inner-shadow"></div>
-                    <img src="logo.png" class="w-48 mb-8 opacity-90" alt="LICICON Logo">
+                    <img src="logo.png" class="w-48 mb-8 opacity-90">
                     <div class="h-[1px] w-12 bg-gold mb-8"></div>
-                    <p class="serif-title text-gold text-center text-xs tracking-[0.4em] uppercase leading-loose" style="color:var(--accent-gold)">
-                        Architecture of<br>Institutional<br>Compliance
-                    </p>
-                    <p class="absolute bottom-10 text-[8px] text-slate-500 tracking-[0.5em] uppercase font-bold">The Strategic Handbook</p>
+                    <p class="serif-title text-gold text-center text-xs tracking-[0.4em] uppercase leading-loose">Architecture of<br>Institutional<br>Compliance</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="bg-black pt-32 pb-16 px-6 md:px-20 border-t border-gold/10">
-    <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center md:text-left">
-            <div class="space-y-8 flex flex-col items-center md:items-start">
-                <img src="logo.png" alt="LICICON" class="h-24 w-auto">
-                <p class="text-[10px] text-slate-600 uppercase tracking-[0.4em] font-bold leading-loose">Smart Asset Management<br>& Compliance Architecture</p>
-            </div>
-            <div class="flex flex-col items-center md:items-start">
-                <h4 class="serif-title text-[12px] tracking-widest text-gold mb-10 uppercase" style="color:var(--accent-gold)">Navegación</h4>
-                <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
-                    <li><a href="#que-hacemos" class="nav-link">Qué Hacemos</a></li>
-                    <li><a href="#especializacion" class="nav-link">Especialización</a></li>
-                    <li><a href="#sectores" class="nav-link">Sectores</a></li>
-                    <li><a href="#metodologia" class="nav-link">Metodología</a></li>
-                </ul>
-            </div>
-            <div class="flex flex-col items-center md:items-start">
-                <h4 class="serif-title text-[12px] tracking-widest text-gold mb-10 uppercase" style="color:var(--accent-gold)">Estándares</h4>
-                <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
-                    <li>ISO 27001 Seguridad</li>
-                    <li>ISO 31000 Riesgos</li>
-                    <li>ISO 37301 Compliance</li>
-                </ul>
-            </div>
-            <div class="flex flex-col items-center md:items-start">
-                <h4 class="serif-title text-[12px] tracking-widest text-gold mb-10 uppercase" style="color:var(--accent-gold)">Contacto</h4>
-                <a href="mailto:contacto@licicon.com" class="text-white text-[12px] font-bold tracking-widest hover:text-gold transition mb-10 uppercase">CONTACTO@LICICON.COM</a>
-                <div class="flex space-x-12">
-                    <a href="#" class="social-icon-gold"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon-gold"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="social-icon-gold"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
+<footer class="bg-black pt-20 md:pt-32 pb-16 px-6 md:px-20 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center md:text-left">
+        <div class="flex flex-col items-center md:items-start"><img src="logo.png" class="h-20 md:h-24 w-auto mb-8"></div>
+        <div>
+            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Navegación</h4>
+            <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
+                <li><a href="#que-hacemos" class="hover:text-gold transition">Qué Hacemos</a></li>
+                <li><a href="#sectores" class="hover:text-gold transition">Sectores</a></li>
+            </ul>
         </div>
-        <div class="mt-32 pt-12 border-t border-white/5 text-center">
-            <p class="text-[9px] text-slate-800 tracking-[0.8em] uppercase font-bold">© LICICON PRIVATE ARCHITECTURE 2026</p>
+        <div>
+            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Estándares</h4>
+            <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
+                <li>ISO 27001 Seguridad</li>
+                <li>ISO 37301 Compliance</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Contacto</h4>
+            <a href="mailto:contacto@licicon.com" class="text-white text-[12px] font-bold hover:text-gold transition block mb-8">CONTACTO@LICICON.COM</a>
+            <div class="flex justify-center md:justify-start space-x-8 text-gold text-xl">
+                <i class="fab fa-linkedin-in"></i><i class="fab fa-whatsapp"></i>
+            </div>
         </div>
     </div>
+    <p class="mt-20 text-center text-[8px] text-slate-800 tracking-[0.8em] uppercase">© LICICON PRIVATE ARCHITECTURE 2026</p>
 </footer>
+
+<div id="sectorModal" class="modal">
+    <div class="modal-content text-center">
+        <span class="close-modal absolute top-4 right-4 text-gold cursor-pointer" onclick="closeSector()">[X]</span>
+        <i id="m-icon" class="fas text-4xl mb-6 text-gold"></i>
+        <h3 id="m-title" class="serif-title text-2xl mb-6 uppercase gold-gradient-text"></h3>
+        <p id="m-desc" class="text-slate-400 text-sm font-light leading-relaxed mb-8"></p>
+        <ul id="m-list" class="text-left text-[11px] text-slate-500 space-y-2 uppercase tracking-wider bg-slate-900/50 p-6 border border-gold/5"></ul>
+    </div>
+</div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -454,38 +380,22 @@
         }, 2500);
     });
 
+    function toggleMenu(open) {
+        document.getElementById('mobile-menu').classList.toggle('open', open);
+    }
+
     const sectorData = {
-        'corp': {
-            title: 'Corporativo',
-            icon: 'fa-building-columns',
-            desc: 'Diseño e implementación de estructuras institucionales para empresas que requieren fortalecer su gobernanza y asegurar el cumplimiento normativo.',
-            apps: ['Gobernanza corporativa', 'Control administrativo', 'Cumplimiento regulatorio', 'Gestión de riesgos', 'Estructuración documental']
-        },
-        'real': {
-            title: 'Real Estate',
-            icon: 'fa-city',
-            desc: 'Gestión estratégica de activos inmobiliarios orientada a proteger el valor patrimonial y optimizar su operación administrativa.',
-            apps: ['Administración de inmuebles', 'Estructuración de contratos', 'Control documental', 'Supervisión contractual', 'Optimización administrativa']
-        },
-        'smart': {
-            title: 'Smart Operations',
-            icon: 'fa-network-wired',
-            desc: 'Sistemas inteligentes de operación que permiten digitalizar procesos administrativos y mejorar la trazabilidad operativa.',
-            apps: ['Digitalización de procesos', 'Automatización documental', 'Control institucional', 'Gestión de flujos', 'Optimización tecnológica']
-        },
-        'tech': {
-            title: 'Tech Assets',
-            icon: 'fa-microchip',
-            desc: 'Gestión y protección de activos tecnológicos mediante modelos de seguridad de la información y gobernanza digital.',
-            apps: ['Gestión de activos tech', 'Seguridad de información', 'Cumplimiento ISO', 'Control de sistemas', 'Gobernanza tecnológica']
-        }
+        'corp': { title: 'Corporativo', icon: 'fa-building-columns', desc: 'Gobernanza y cumplimiento normativo corporativo.', apps: ['Gobernanza', 'Control', 'Riesgos'] },
+        'real': { title: 'Real Estate', icon: 'fa-city', desc: 'Gestión estratégica de activos inmobiliarios.', apps: ['Administración', 'Contratos', 'Optimización'] },
+        'smart': { title: 'Smart Operations', icon: 'fa-network-wired', desc: 'Sistemas inteligentes de operación.', apps: ['Digitalización', 'Flujos', 'Automatización'] },
+        'tech': { title: 'Tech Assets', icon: 'fa-microchip', desc: 'Gestión y protección de activos tecnológicos.', apps: ['Seguridad', 'ISO', 'Gobernanza Tech'] }
     };
 
     function openSector(key) {
         const data = sectorData[key];
         document.getElementById('m-title').innerText = data.title;
         document.getElementById('m-desc').innerText = data.desc;
-        document.getElementById('m-icon').className = `fas ${data.icon} text-4xl mb-6`;
+        document.getElementById('m-icon').className = `fas ${data.icon} text-4xl mb-6 text-gold`;
         document.getElementById('m-list').innerHTML = data.apps.map(a => `<li>• ${a}</li>`).join('');
         document.getElementById('sectorModal').style.display = 'block';
         document.body.style.overflow = 'hidden';
@@ -496,6 +406,5 @@
         document.body.style.overflow = 'auto';
     }
 </script>
-
 </body>
 </html>
