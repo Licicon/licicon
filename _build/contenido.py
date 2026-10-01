@@ -1237,3 +1237,6 @@ PROYECTOS = [{'nombre': 'Certezza',
   'desc': 'Exploración de una interfaz monocular para información y notificaciones; concepto en '
           'investigación.',
   'marca': 'innova-web'}]
+
+# Proyectos personales retirados del escaparate público.
+PROYECTOS = [p for p in PROYECTOS if p["nombre"] not in {"Solid Eye", "JARVIS personal"}]
