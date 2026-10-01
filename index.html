@@ -1,694 +1,829 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LICICON | Smart Asset Management & Compliance</title>
-    <meta name="description" content="LICICON — Firma especializada en Smart Asset Management, Compliance normativo y control institucional. Plataformas Catturare, Certezza y Conformità. CDMX y Toluca.">
-    <meta name="keywords" content="compliance México, gestión de activos, control de obra, inmobiliaria IA, cumplimiento normativo, ISO 27001, ISO 37301, LICICON">
-    <meta property="og:title" content="LICICON | Smart Asset Management & Compliance">
-    <meta property="og:description" content="Arquitectura de Cumplimiento Institucional. Plataformas tecnológicas para inmobiliarias, constructoras y empresas en México.">
-    <meta property="og:url" content="https://www.licicon.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PW4C5LB');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LICICON | Grupo de firmas en derecho, tecnología, construcción, inmuebles y administración</title>
+<meta name="description" content="LICICON integra seis firmas especializadas: Eje Legal, Innova Web Studio, Boss Studio, Punto Inmuebles, Plano y Obra y Punto Control. Cumplimiento, tecnología y control para empresas en Toluca, Metepec y Ciudad de México.">
+<link rel="canonical" href="https://www.licicon.com/">
+<meta property="og:title" content="LICICON | Estructura, cumplimiento y tecnología">
+<meta property="og:description" content="Seis firmas especializadas bajo un mismo estándar de rigor jurídico y control operativo.">
+<meta property="og:url" content="https://www.licicon.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:image" content="https://www.licicon.com/assets/og/licicon.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LICICON: estructura, cumplimiento y tecnología">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.licicon.com/assets/og/licicon.jpg">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="/assets/licicon-emblema.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "LICICON", "url": "https://www.licicon.com/", "logo": "https://www.licicon.com/assets/licicon-emblema.png", "email": "contactolicicon@licicon.com", "telephone": "+52 55 2137 9039", "subOrganization": [{"@type": "LegalService", "name": "Eje Legal", "url": "https://www.licicon.com/eje-legal/"}, {"@type": "ProfessionalService", "name": "Innova Web Studio", "url": "https://www.licicon.com/innova-web/"}, {"@type": "ProfessionalService", "name": "Boss Social Studio", "url": "https://www.licicon.com/boss-studio/"}, {"@type": "RealEstateAgent", "name": "Punto Inmuebles", "url": "https://www.licicon.com/punto-inmuebles/"}, {"@type": "GeneralContractor", "name": "Plano y Obra", "url": "https://www.licicon.com/plano-y-obra/"}, {"@type": "ProfessionalService", "name": "Punto Control", "url": "https://www.licicon.com/punto-control/"}]}</script>
+<style>
+:root{
+  --c0:#08090b; --c1:#0d0f13; --c2:#13161b;
+  --gold:#d4af37; --gold-2:#b8995a; --gold-line:rgba(212,175,55,.16); --gold-faint:rgba(212,175,55,.07);
+  --text:#ebe7de; --muted:#8f8b82; --dim:#5e5b55;
+  --serif:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --sans:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.19,1,.22,1); --ease-2:cubic-bezier(.65,0,.35,1);
+  --pad:clamp(20px,5vw,72px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--c0);color:var(--text);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:var(--c0)}
+:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+.wrap{width:min(1240px,100%);margin-inline:auto;padding-inline:var(--pad)}
+.serif{font-family:var(--serif);font-weight:300;letter-spacing:-.005em}
+.label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-2);font-weight:500}
+.rule{height:1px;background:var(--gold-line)}
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { gold: "#D4AF37" } } } }</script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root{ 
-            --brand-blue:#0f172a; 
-            --accent-gold:#D4AF37;
-            --light-gold:#F1E5AC;
-            --deep-slate:#05070a; 
-            --divider:rgba(212, 175, 55, 0.25); 
-        }
+/* ---------- intro ---------- */
+#intro{position:fixed;inset:0;z-index:100;background:var(--c0);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:var(--pad);cursor:pointer;clip-path:inset(0 0 0 0);transition:clip-path 1.2s var(--ease-2)}
+#intro.out{pointer-events:none;clip-path:inset(0 0 100% 0)}
+#intro::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(212,175,55,.08),transparent 55%);opacity:0;animation:iFade 2.4s ease .2s forwards}
+#intro .inner{position:relative;display:flex;flex-direction:column;align-items:center;transition:opacity .7s ease,transform 1.1s var(--ease)}
+#intro.out .inner{opacity:0;transform:translateY(-30px)}
+.i-emb{position:relative;width:128px;height:128px;display:grid;place-items:center}
+.i-emb svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.i-emb circle{fill:none;stroke:var(--gold);stroke-width:.6;stroke-dasharray:377;stroke-dashoffset:377;animation:iRing 1.8s var(--ease-2) .15s forwards}
+.i-emb img{width:92px;height:92px;opacity:0;transform:scale(.86);filter:blur(6px);animation:iEmb 1.6s var(--ease) .55s forwards}
+.i-word{display:flex;margin:34px 0 0;padding-left:.46em;font-family:var(--serif);font-weight:400;font-size:clamp(30px,6vw,52px);letter-spacing:.46em;color:var(--text)}
+.i-word span{opacity:0;transform:translateY(14px);filter:blur(8px);animation:iChar 1.3s var(--ease) forwards;animation-delay:calc(1s + var(--i)*.07s)}
+.i-line{width:min(260px,60vw);height:1px;margin:22px 0 18px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);animation:iLine 1.6s var(--ease) 1.6s forwards}
+.i-tag{font-size:10.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-2);opacity:0;animation:iFade 1.4s ease 1.9s forwards;padding-left:.42em;text-align:center}
+.i-marks{display:flex;gap:clamp(18px,4vw,36px);align-items:center;margin-top:clamp(44px,8vh,72px)}
+.i-marks img{height:clamp(20px,3.6vw,30px);width:auto;opacity:0;transform:translateY(10px);animation:iMark 1.2s var(--ease) forwards;animation-delay:calc(2.2s + var(--i)*.1s)}
+.i-skip{position:absolute;bottom:calc(28px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);opacity:0;animation:iFade 1s ease 1.2s forwards}
+@media(max-width:480px){.i-tag{letter-spacing:.24em;font-size:9.5px;padding-left:.24em}.i-word{letter-spacing:.38em;padding-left:.38em}}
+@keyframes iRing{to{stroke-dashoffset:0}}
+@keyframes iEmb{to{opacity:1;transform:none;filter:none}}
+@keyframes iChar{to{opacity:1;transform:none;filter:none}}
+@keyframes iLine{to{transform:scaleX(1)}}
+@keyframes iFade{to{opacity:1}}
+@keyframes iMark{to{opacity:.5;transform:none}}
 
-        /* ===== FIX MOVIL ===== */
-        html, body{
-            overflow-x: hidden;
-            max-width: 100%;
-        }
-        *, *::before, *::after{ box-sizing: border-box; }
+/* ---------- progreso de lectura ---------- */
+#progress{position:fixed;top:0;left:0;height:1px;width:100%;background:var(--gold);transform-origin:0 50%;transform:scaleX(0);z-index:60}
 
-        body{ font-family:'Montserrat',sans-serif; background:var(--deep-slate); color:#fff; }
-        .serif-title{font-family:'Cinzel',serif;}
-        
-        /* PRELOADER */
-        #preloader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--deep-slate); z-index: 9999;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            opacity: 1; transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .loader-logo { 
-            width: min(450px, 80%); margin-bottom: 30px; 
-            opacity: 0; animation: fadeInLogo 2s forwards ease-in-out, pulseLogo 3s infinite 2s ease-in-out; 
-        }
-        @keyframes fadeInLogo { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes pulseLogo { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.02); opacity: 1; } }
-        
-        .loader-bar { width: 250px; height: 1px; background: rgba(212, 175, 55, 0.1); position: relative; overflow: hidden; opacity: 0; animation: fadeInLogo 2s forwards 0.5s ease-in-out; }
-        .loader-progress { position: absolute; height: 100%; width: 0; background: var(--accent-gold); animation: load 3s forwards 1s ease-in-out; }
-        @keyframes load { to { width: 100%; } }
+/* ---------- navegación ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .6s var(--ease),border-color .6s var(--ease),backdrop-filter .6s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .6s var(--ease)}
+.nav.solid{background:rgba(8,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--gold-line)}
+.nav.solid .wrap{height:68px}
+.brandmark{display:flex;align-items:center;gap:14px}
+.brandmark img{width:34px;height:34px}
+.brandmark span{font-family:var(--serif);font-size:22px;letter-spacing:.34em;font-weight:500;color:var(--text)}
+.links{display:flex;gap:34px;align-items:center;font-size:12.5px;letter-spacing:.06em}
+.links a{position:relative;color:var(--muted);transition:color .4s}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+.links a:hover,.links a.on{color:var(--text)}
+.links a:hover::after,.links a.on::after{transform:scaleX(1);transform-origin:left}
+.links .cta-s{border:1px solid var(--gold-line);padding:10px 18px;color:var(--text)}
+.links .cta-s::after{display:none}
+.links .cta-s:hover{border-color:var(--gold)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger i{position:absolute;left:10px;right:10px;height:1px;background:var(--text);transition:transform .5s var(--ease),opacity .3s}
+.burger i:nth-child(1){top:17px}.burger i:nth-child(2){top:26px}
+.menu-open .burger i:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+.menu-open .burger i:nth-child(2){transform:translateY(-4.5px) rotate(-45deg)}
+.overlay{pointer-events:none;position:fixed;inset:0;z-index:45;background:var(--c0);display:flex;flex-direction:column;justify-content:center;padding:var(--pad);clip-path:inset(0 0 100% 0);transition:clip-path .8s var(--ease-2)}
+.menu-open .overlay{pointer-events:auto;clip-path:inset(0 0 0 0)}
+.overlay a{font-family:var(--serif);font-size:clamp(34px,9vw,54px);font-weight:300;line-height:1.35;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .8s var(--ease)}
+.menu-open .overlay a{opacity:1;transform:none;transition-delay:calc(.25s + var(--i)*.06s)}
+@media(max-width:980px){.links{display:none}.burger{display:block}}
 
-        /* NAV */
-        nav { background: rgba(5, 7, 10, 0.97); backdrop-filter: blur(15px); border-bottom: 1px solid var(--divider); height: 80px; transition: 0.3s; }
-        @media (min-width: 1024px) { nav { height: 100px; } }
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(40px,7vh,80px);overflow:hidden}
+#net{pointer-events:none;position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 2.4s ease .4s}
+.loaded #net{opacity:1}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 70% 30%,transparent 0,var(--c0) 78%),linear-gradient(to top,var(--c0) 0,transparent 40%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;width:min(1240px,100%)}
+.hero .label{display:block;margin-bottom:34px}
+.hero-line{height:1px;background:linear-gradient(90deg,var(--gold),transparent);width:min(420px,60%);margin-bottom:40px;transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease) .2s}
+.loaded .hero-line{transform:scaleX(1)}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(44px,7.6vw,112px);line-height:.98;letter-spacing:-.02em;margin:0 0 36px;max-width:14ch}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1.4s var(--ease)}
+.hero h1 em{font-style:italic;color:var(--gold-2)}
+.loaded .hero h1 .ln>span{transform:none}
+.hero h1 .ln:nth-child(2)>span{transition-delay:.12s}.hero h1 .ln:nth-child(3)>span{transition-delay:.24s}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+.hero p.lead{max-width:54ch;color:var(--muted);font-size:clamp(15px,1.3vw,17px);margin:0;opacity:0;transform:translateY(14px);transition:opacity 1.2s ease .7s,transform 1.4s var(--ease) .7s}
+.loaded .hero p.lead{opacity:1;transform:none}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;opacity:0;transition:opacity 1.2s ease .9s}
+.loaded .actions{opacity:1}
+.btn{position:relative;display:inline-flex;align-items:center;gap:14px;padding:16px 28px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;border:1px solid var(--gold);color:var(--c0);background:var(--gold);overflow:hidden;cursor:pointer;font-family:var(--sans);transition:color .5s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;background:var(--text);transform:translateY(101%);transition:transform .6s var(--ease)}
+.btn span,.btn svg{position:relative}
+.btn:hover::before{transform:none}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--gold-line)}
+.btn.ghost::before{background:var(--gold)}
+.btn.ghost:hover{color:var(--c0)}
+.btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.2;transition:transform .6s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.hero-marks{display:flex;gap:26px;align-items:center}
+.hero-marks a{display:block;height:30px;opacity:0;transform:translateY(8px);transition:opacity 1s ease,transform 1.2s var(--ease)}
+.loaded .hero-marks a{opacity:.42;transform:none;transition-delay:calc(1.1s + var(--i)*.09s)}
+.loaded .hero-marks a:hover{opacity:1;transition-delay:0s}
+.hero-marks img{height:100%;width:auto}
+.scroll-cue{position:absolute;left:50%;bottom:0;width:1px;height:64px;background:var(--gold-line);overflow:hidden;z-index:2}
+.scroll-cue::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--gold);animation:cue 2.6s var(--ease-2) infinite}
+@keyframes cue{to{top:100%}}
+@media(max-width:860px){.hero-foot{grid-template-columns:1fr}.hero-marks{gap:18px;flex-wrap:wrap}.hero-marks a{height:24px}.scroll-cue{display:none}}
 
-        .nav-link { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: inline-block; }
-        .nav-link:hover { transform: translateY(-4px); color: var(--accent-gold) !important; filter: drop-shadow(0 0 5px rgba(214, 175, 55, 0.4)); }
+/* ---------- reveal ---------- */
+[data-r]{opacity:0;transform:translateY(22px);transition:opacity 1.1s ease,transform 1.3s var(--ease);transition-delay:calc(var(--d,0)*1ms)}
+[data-r].in{opacity:1;transform:none}
+[data-r="line"]{transform:scaleX(0);transform-origin:left;opacity:1;transition:transform 1.6s var(--ease)}
+[data-r="line"].in{transform:scaleX(1)}
 
-        .btn-luxe {
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
-            padding: 10px 20px;
-            font-size: 9px;
-            letter-spacing: 0.3em;
-            font-weight: 700;
-            text-transform: uppercase;
-            transition: all 0.5s ease;
-            background: transparent;
-        }
-        .btn-luxe:hover { background: var(--accent-gold); color: #000; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+/* ---------- secciones ---------- */
+section{position:relative}
+.sec{padding:clamp(96px,14vw,180px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,6vw,96px);align-items:end;margin-bottom:clamp(48px,7vw,96px)}
+.sec-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(38px,5.2vw,72px);line-height:1.02;letter-spacing:-.015em;margin:14px 0 0}
+.sec-head p{color:var(--muted);max-width:58ch;margin:0}
+@media(max-width:860px){.sec-head{grid-template-columns:1fr}}
 
-        .gold-divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--divider), transparent); }
+/* grupo */
+.grupo{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(40px,7vw,120px)}
+.grupo blockquote{margin:0;font-family:var(--serif);font-weight:300;font-size:clamp(28px,3.3vw,46px);line-height:1.2;color:var(--text)}
+.grupo blockquote em{color:var(--gold-2)}
+.grupo .txt p{color:var(--muted);margin:0 0 20px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(64px,8vw,110px);border-top:1px solid var(--gold-line)}
+.pillar{padding:34px 34px 10px 0;border-right:1px solid var(--gold-line)}
+.pillar+.pillar{padding-left:34px}
+.pillar:last-child{border-right:0}
+.pillar h3{font-family:var(--serif);font-weight:400;font-size:28px;margin:0 0 10px}
+.pillar p{color:var(--muted);margin:0;font-size:15px}
+@media(max-width:860px){.grupo{grid-template-columns:1fr}.pillars{grid-template-columns:1fr}.pillar,.pillar+.pillar{padding:28px 0;border-right:0;border-bottom:1px solid var(--gold-line)}}
 
-        /* CARDS */
-        .blue-gold-card {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.6));
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-            cursor: pointer;
-            position: relative;
-        }
-        .blue-gold-card:hover { transform: translateY(-12px); border-color: var(--accent-gold); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); }
-        
-        .card-indicator {
-            font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold);
-            margin-top: 15px; opacity: 0; transform: translateY(10px); transition: all 0.4s ease;
-        }
-        .blue-gold-card:hover .card-indicator { opacity: 1; transform: translateY(0); }
+/* firmas (índice) */
+.firms{border-top:1px solid var(--gold-line)}
+.firm{display:grid;grid-template-columns:120px minmax(0,3fr) minmax(0,4fr) 48px;gap:clamp(18px,3vw,48px);align-items:center;padding:34px 0;border-bottom:1px solid var(--gold-line);position:relative;isolation:isolate}
+.firm::before{content:"";position:absolute;inset:0 calc(var(--pad)*-1);background:linear-gradient(90deg,var(--gold-faint),transparent 70%);opacity:0;transition:opacity .8s var(--ease);z-index:-1}
+.firm:hover::before{opacity:1}
+.firm .mk{position:relative;width:120px;height:80px;border-radius:2px;overflow:hidden}
+.firm .mk img{position:absolute;transition:opacity .8s var(--ease),transform 1.1s var(--ease)}
+.firm .mk .m{inset:14px 20px;width:calc(100% - 40px);height:calc(100% - 28px);object-fit:contain;opacity:.62}
+.firm .mk .c{inset:0;width:100%;height:100%;object-fit:contain;padding:10px;opacity:0;transform:scale(1.06)}
+.firm .mk .bg{position:absolute;inset:0;opacity:0;transition:opacity .8s var(--ease)}
+.firm:hover .mk .m{opacity:0;transform:scale(.94)}
+.firm:hover .mk .c,.firm:hover .mk .bg{opacity:1;transform:none}
+.firm .nm .label{display:block;margin-bottom:6px}
+.firm .nm h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,40px);line-height:1.05;margin:0;transition:color .5s}
+.firm:hover .nm h3{color:#fff}
+.firm .ds{color:var(--muted);font-size:15px;margin:0}
+.firm .go{width:48px;height:48px;border:1px solid var(--gold-line);border-radius:50%;display:grid;place-items:center;transition:border-color .5s,background .5s,transform .8s var(--ease)}
+.firm .go svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.2;transition:stroke .4s}
+.firm:hover .go{background:var(--gold);border-color:var(--gold);transform:rotate(-45deg)}
+.firm:hover .go svg{stroke:var(--c0)}
+@media(max-width:860px){.firm{grid-template-columns:84px minmax(0,1fr) 40px;row-gap:12px}.firm .mk{width:84px;height:60px}.firm .ds{grid-column:2/4;grid-row:2}.firm .go{width:40px;height:40px}}
 
-        .plus-icon { position: absolute; top: 15px; right: 15px; font-size: 12px; color: var(--accent-gold); opacity: 0.3; transition: 0.4s; }
-        .blue-gold-card:hover .plus-icon { opacity: 1; transform: rotate(90deg); }
+/* servicios con pestañas */
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;position:relative;border-bottom:1px solid var(--gold-line)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{background:none;border:0;color:var(--muted);font-family:var(--sans);font-size:13px;letter-spacing:.04em;padding:18px 20px;cursor:pointer;white-space:nowrap;transition:color .4s}
+.tab[aria-selected="true"],.tab:hover{color:var(--text)}
+.tab-ind{position:absolute;bottom:-1px;height:1px;background:var(--gold);transition:left .7s var(--ease),width .7s var(--ease)}
+.panels{position:relative;padding-top:clamp(40px,5vw,64px)}
+.panel{display:none}
+.panel.on{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,6vw,96px);animation:pin .9s var(--ease) both}
+@keyframes pin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.panel aside h3{font-family:var(--serif);font-weight:300;font-size:clamp(34px,4vw,52px);line-height:1.05;margin:10px 0 18px}
+.panel aside p{color:var(--muted);margin:0 0 28px}
+.panel aside .lk{display:flex;flex-direction:column;gap:12px;font-size:13px;letter-spacing:.06em}
+.panel aside .lk a{color:var(--gold-2);display:inline-flex;gap:10px;align-items:center;width:fit-content;border-bottom:1px solid transparent;transition:border-color .4s,color .4s}
+.panel aside .lk svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.3;transition:transform .5s var(--ease)}
+.panel aside .lk a:hover svg{transform:translateX(4px)}
+.panel aside .lk a:hover{color:var(--gold);border-color:var(--gold)}
+.svc-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--gold-line)}
+.svc-item{padding:28px 28px 28px 0;border-bottom:1px solid var(--gold-line);opacity:0;transform:translateY(10px);animation:pin .9s var(--ease) forwards;animation-delay:calc(.08s + var(--i)*.06s)}
+.svc-item:nth-child(even){padding:28px 0 28px 28px;border-left:1px solid var(--gold-line)}
+.svc-item h4{font-family:var(--serif);font-weight:500;font-size:23px;margin:0 0 8px;line-height:1.2}
+.svc-item p{color:var(--muted);margin:0 0 12px;font-size:14.5px}
+.svc-item ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--gold-2);letter-spacing:.03em}
+.svc-item li::before{content:"";display:inline-block;width:10px;height:1px;background:var(--gold-2);vertical-align:middle;margin-right:8px}
+@media(max-width:860px){.panel.on{grid-template-columns:1fr}.svc-list{grid-template-columns:1fr}.svc-item,.svc-item:nth-child(even){padding:24px 0;border-left:0}}
 
-        /* METODOLOGÍA */
-        .step-node { transition: 0.5s ease; }
-        .step-item:hover .step-node { background: var(--accent-gold); box-shadow: 0 0 15px var(--accent-gold); }
+/* desarrollos */
+.dev-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--gold-line);border-left:1px solid var(--gold-line)}
+.dev{position:relative;padding:40px 36px 36px;border-right:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line);overflow:hidden;min-height:300px;display:flex;flex-direction:column}
+.dev::before{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),rgba(212,175,55,.09),transparent 60%);opacity:0;transition:opacity .6s}
+.dev:hover::before{opacity:1}
+.dev::after{content:"";position:absolute;top:0;left:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1s var(--ease)}
+.dev:hover::after{transform:scaleX(1)}
+.dev .label{position:relative}
+.dev h3{position:relative;font-family:var(--serif);font-weight:400;font-size:36px;margin:18px 0 14px;line-height:1.05}
+.dev p{position:relative;color:var(--muted);font-size:14.5px;margin:0 0 24px;flex:1}
+.dev .by{position:relative;font-size:12px;color:var(--dim);letter-spacing:.04em}
+.dev .by a{color:var(--muted);border-bottom:1px solid var(--gold-line);transition:color .4s,border-color .4s}
+.dev .by a:hover{color:var(--gold);border-color:var(--gold)}
+@media(max-width:980px){.dev-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.dev-grid{grid-template-columns:1fr}.dev{min-height:0}}
 
-        .asset-photo {
-            filter: grayscale(100%) brightness(50%);
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            transition: 1.2s ease-in-out; width: 100%; height: 400px; object-fit: cover;
-        }
-        @media (min-width: 1024px) { .asset-photo { height: 500px; } }
-        .asset-photo:hover { filter: grayscale(0%) brightness(90%); border-color: var(--accent-gold); }
+/* casos */
+.cases{border-top:1px solid var(--gold-line)}
+.case{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);gap:clamp(24px,4vw,64px);padding:clamp(40px,5vw,64px) 0;border-bottom:1px solid var(--gold-line);position:relative}
+.case::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--ease)}
+.case:hover::before{transform:scaleX(1)}
+.case .who .label{display:block;margin-bottom:12px}
+.case .who h3{font-family:var(--serif);font-weight:300;font-size:clamp(36px,4.4vw,58px);line-height:1;margin:0 0 12px;transition:color .6s}
+.case:hover .who h3{color:#fff}
+.case .who .where{color:var(--dim);font-size:13px}
+.case .st{display:inline-block;margin-left:10px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);border:1px solid var(--gold-line);padding:3px 8px;vertical-align:middle}
+.case .story h4{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);font-weight:500;margin:0 0 8px}
+.case .story p{color:var(--muted);margin:0 0 22px;font-size:15px}
+.case .story p:last-child{margin:0}
+.case .meta ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:8px;font-size:14px}
+.case .meta li::before{content:"";display:inline-block;width:12px;height:1px;background:var(--gold-2);vertical-align:middle;margin-right:10px}
+.case .by{font-size:12px;color:var(--dim);margin-bottom:18px}
+.case .by a{color:var(--muted);border-bottom:1px solid var(--gold-line)}
+.case .by a:hover{color:var(--gold)}
+.case .visit{display:inline-flex;gap:10px;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--text);border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .4s,gap .6s var(--ease)}
+.case .visit:hover{color:var(--gold);gap:16px}
+.case .visit svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.3}
+@media(max-width:980px){.case{grid-template-columns:1fr 1fr}.case .who{grid-column:1/-1}}
+@media(max-width:620px){.case{grid-template-columns:1fr}}
 
-        /* LIBRO BOSS */
-        .book-container { perspective: 1000px; display: flex; justify-content: center; align-items: center; padding: 20px; }
-        .book-wrapper {
-            width: min(320px, 80vw); height: 450px; position: relative;
-            transform-style: preserve-3d; transform: rotateY(-20deg) rotateX(10deg);
-            transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        .book-container:hover .book-wrapper { transform: rotateY(0deg) rotateX(0deg) scale(1.05); }
-        .book-cover {
-            width: 100%; height: 100%; background: linear-gradient(135deg, #0f172a 0%, #05070a 100%);
-            border: 1px solid var(--accent-gold); box-shadow: -15px 15px 40px rgba(0,0,0,0.8);
-            display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; position: relative; z-index: 2;
-        }
-        .book-spine { position: absolute; left: 0; top: 0; width: 40px; height: 100%; background: #05070a; transform: rotateY(-90deg) translateX(-20px); border: 1px solid var(--accent-gold); z-index: 1; }
+/* testimonios */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,72px)}
+.quote{margin:0;border-top:1px solid var(--gold-line);padding-top:34px;position:relative}
+.quote::before{content:"\201C";position:absolute;top:10px;right:0;font-family:var(--serif);font-size:120px;line-height:1;color:var(--gold);opacity:.18}
+.quote p{font-family:var(--serif);font-weight:300;font-style:italic;font-size:clamp(22px,2.2vw,28px);line-height:1.35;margin:0 0 26px}
+.quote footer{border:0;padding:0;font-size:13px;color:var(--muted)}
+.quote footer b{display:block;color:var(--text);font-weight:500;font-size:14px;margin-bottom:2px}
 
-        .gold-gradient-text {
-            background: linear-gradient(to right, var(--accent-gold), var(--light-gold), var(--accent-gold));
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        }
+/* método */
+.method{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,7vw,120px)}
+.method .sticky{position:sticky;top:120px;align-self:start}
+.steps{position:relative;list-style:none;margin:0;padding:0 0 0 48px}
+.steps::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--gold-line)}
+.steps .fill{position:absolute;left:0;top:8px;width:1px;background:var(--gold);height:calc((100% - 16px)*var(--p,0))}
+.step{position:relative;padding:0 0 64px}
+.step:last-child{padding-bottom:0}
+.step::before{content:"";position:absolute;left:-52px;top:10px;width:9px;height:9px;border-radius:50%;background:var(--c0);border:1px solid var(--gold-2);transition:background .6s,box-shadow .6s}
+.step.lit::before{background:var(--gold);box-shadow:0 0 0 6px rgba(212,175,55,.12)}
+.step .n{font-family:var(--serif);font-style:italic;color:var(--gold-2);font-size:20px}
+.step h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,38px);margin:4px 0 10px;line-height:1.1}
+.step p{color:var(--muted);margin:0;max-width:52ch}
+@media(max-width:860px){.method{grid-template-columns:1fr}.method .sticky{position:static}}
 
-        /* MODAL */
-        .modal {
-            display: none; position: fixed; z-index: 100; left: 0; top: 0; 
-            width: 100%; height: 100%; background-color: rgba(5, 7, 10, 0.98);
-            backdrop-filter: blur(15px); overflow-y: auto;
-        }
-        .modal-content {
-            background: var(--deep-slate); margin: 5% auto; padding: 40px 20px; 
-            border: 1px solid var(--divider); width: 90%; max-width: 550px; position: relative;
-        }
+/* marcos de referencia */
+.norms{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--gold-line)}
+.norm{padding:34px 26px 34px 0;border-bottom:1px solid var(--gold-line)}
+.norm+.norm{padding-left:26px;border-left:1px solid var(--gold-line)}
+.norm:nth-child(4n+1){padding-left:0;border-left:0}
+.norm b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.6vw,36px);color:var(--text);line-height:1.1;margin-bottom:8px}
+.norm span{color:var(--muted);font-size:14px}
+@media(max-width:860px){.norms{grid-template-columns:1fr 1fr}.norm:nth-child(n){padding:26px 18px 26px 0;border-left:0}.norm:nth-child(even){padding-left:18px;border-left:1px solid var(--gold-line)}}
 
-        /* MENU MOBILE OVERLAY */
-        #mobile-menu { transform: translateY(-100%); transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
-        #mobile-menu.open { transform: translateY(0); }
-    </style>
+/* contacto */
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,7vw,120px)}
+.contact h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,5.4vw,76px);line-height:1;margin:14px 0 28px}
+.contact .txt p{color:var(--muted);max-width:44ch}
+.chan{display:flex;flex-direction:column;border-top:1px solid var(--gold-line);margin-top:40px}
+.chan a{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--gold-line);transition:padding .6s var(--ease),color .4s}
+.chan a:hover{padding-left:12px;color:var(--gold)}
+.chan small{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.chan span{font-size:17px}
+.chan svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.2}
+form .f{position:relative;margin-bottom:30px}
+form input,form select,form textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--gold-line);color:var(--text);font-family:var(--sans);font-weight:300;font-size:16px;padding:22px 0 10px;border-radius:0;outline:none;transition:border-color .5s;-webkit-appearance:none;appearance:none}
+form select{cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,var(--gold-2) 50%),linear-gradient(135deg,var(--gold-2) 50%,transparent 50%);background-position:calc(100% - 12px) 60%,calc(100% - 7px) 60%;background-size:5px 5px;background-repeat:no-repeat}
+form select option{background:var(--c1);color:var(--text)}
+form textarea{resize:none;min-height:110px}
+form label{position:absolute;left:0;top:22px;font-size:15px;color:var(--dim);pointer-events:none;transition:top .5s var(--ease),font-size .5s var(--ease),color .5s}
+form .f::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+form .f:focus-within::after{transform:scaleX(1)}
+form .f:focus-within label,form input:not(:placeholder-shown)+label,form textarea:not(:placeholder-shown)+label,form .f.sel label{top:0;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2)}
+.ok{margin-top:16px;font-size:13px;color:var(--gold);opacity:0;transition:opacity .6s}
+.ok.show{opacity:1}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+
+/* footer */
+footer{border-top:1px solid var(--gold-line);padding:clamp(64px,8vw,110px) 0 calc(40px + env(safe-area-inset-bottom,0px))}
+.fgrid{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:40px}
+.fgrid p{color:var(--muted);font-size:14px;max-width:34ch;margin:22px 0 0}
+.fgrid h4{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-2);font-weight:500;margin:6px 0 22px}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14px}
+.fgrid ul a{color:var(--muted);transition:color .4s}
+.fgrid ul a:hover{color:var(--text)}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:80px;padding-top:26px;border-top:1px solid var(--gold-line);font-size:12px;color:var(--dim)}
+.legal .lg{display:flex;gap:24px}.legal a{color:var(--muted);border-bottom:1px solid var(--gold-line);transition:color .4s}
+.legal a:hover{color:var(--gold)}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}}
+
+/* cookies */
+#cookieBanner{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:560px;margin-left:auto;background:rgba(13,15,19,.94);backdrop-filter:blur(10px);border:1px solid var(--gold-line);padding:18px 20px;z-index:40;display:flex;gap:16px;align-items:center;font-size:12.5px;color:var(--muted);transform:translateY(20px);opacity:0;transition:opacity .8s,transform 1s var(--ease)}
+#cookieBanner.show{opacity:1;transform:none}
+#cookieBanner p{margin:0;flex:1}
+#cookieBanner button{font-family:var(--sans)}
+#cookieBanner .lnk{color:var(--gold-2);text-decoration:underline}
+#cookieBanner .acc{background:var(--gold);color:var(--c0);border:0;padding:10px 16px;font-size:11px;letter-spacing:.16em;cursor:pointer;font-weight:600}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  #intro{display:none!important}
+  [data-r],.hero h1 .ln>span,.hero p.lead,.actions,.hero-marks a,.hero-line,#net{opacity:1!important;transform:none!important}
+  .svc-item{opacity:1;transform:none}
+}
+.studio-hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.35;filter:saturate(.5);animation:studioZoom 12s ease-out both}.hero #net{opacity:.35}.studio-gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}.studio-scene{position:relative;display:block;height:310px;overflow:hidden;border:1px solid var(--gold-line)}.studio-scene img{width:100%;height:100%;object-fit:cover;filter:saturate(.65) brightness(.75);transition:transform 1.2s var(--ease),filter 1s}.studio-scene:hover img{transform:scale(1.055);filter:saturate(.9) brightness(.85)}.studio-scene:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#08090be6,transparent 75%)}.studio-scene>span{position:absolute;bottom:26px;left:28px;right:28px;z-index:2;font-family:var(--serif);font-size:32px;display:flex;justify-content:space-between;align-items:center}.studio-scene i{font:normal 18px var(--sans);color:var(--gold-2)}@keyframes studioZoom{from{transform:scale(1.08)}to{transform:scale(1)}}@media(max-width:700px){.studio-gallery-grid{grid-template-columns:1fr;gap:16px}.studio-scene{height:270px}.studio-scene>span{font-size:29px;left:22px;bottom:22px}}@media(prefers-reduced-motion:reduce){.studio-hero-photo{animation:none}.studio-scene img{transition:none}}
+section[id]{scroll-margin-top:100px}
+
+.hero{background:#09182a;padding-top:130px}.studio-hero-photo{opacity:.9;filter:saturate(.8);object-position:65% center}.hero::after{background:linear-gradient(90deg,rgba(5,14,25,.92) 0%,rgba(5,14,25,.65) 38%,rgba(5,14,25,.08) 78%),linear-gradient(0deg,rgba(5,14,25,.65),transparent 40%)}.hero #net{opacity:.08}.hero h1 em{color:#dce8f4}.hero .lead{max-width:52ch}.service-panorama{grid-column:1/-1;margin:0;height:300px;overflow:hidden;border:1px solid var(--gold-line)}.service-panorama img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) brightness(.85);animation:studioZoom 9s ease-out both}.panel.on{row-gap:35px}@media(max-width:700px){.studio-hero-photo{object-position:62% center}.hero::after{background:linear-gradient(90deg,#05101ce6,#05101c66),linear-gradient(0deg,#05101ce6,transparent)}.service-panorama{height:210px}.hero{padding-top:120px}}@media(prefers-reduced-motion:reduce){.service-panorama img{animation:none}}
+
+.editorial-photo{margin:55px 0 0;height:390px;position:relative;overflow:hidden;border:1px solid var(--gold-line)}.editorial-photo img,.contact-photo img,.firm-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.65) brightness(.83);transition:transform 1.5s var(--ease)}.editorial-photo:hover img,.firm:hover .firm-photo img{transform:scale(1.035)}.editorial-photo figcaption{position:absolute;inset:auto 0 0;padding:45px 28px 24px;background:linear-gradient(0deg,#07121ae8,transparent);color:#e8edf2;font-size:13px;letter-spacing:.12em}.digital-photo{margin:0 0 40px;height:310px}.contact-photo{grid-column:1/-1;margin:0;height:320px;overflow:hidden}.firm-photo{grid-row:1;display:block;grid-column:1/-1;height:220px;overflow:hidden;margin-bottom:24px}.firm{position:relative}.firm-photo img{display:block}.contact{row-gap:40px}@media(max-width:700px){.editorial-photo{height:260px}.contact-photo{height:230px}.firm-photo{height:190px}.editorial-photo figcaption{font-size:11px;padding:35px 20px 20px}}@media(prefers-reduced-motion:reduce){.editorial-photo img,.firm-photo img{transition:none}}
+</style>
 </head>
 <body>
-
-<div id="preloader">
-    <img src="logo.png" alt="LICICON Logo" class="loader-logo">
-    <div class="loader-bar"><div class="loader-progress"></div></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PW4C5LB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="intro" aria-hidden="true">
+  <div class="inner">
+    <div class="i-emb"><svg viewBox="0 0 128 128"><circle cx="64" cy="64" r="60"/></svg><img src="/assets/licicon-emblema-lg.png" alt=""></div>
+    <div class="i-word"><span style="--i:0">L</span><span style="--i:1">I</span><span style="--i:2">C</span><span style="--i:3">I</span><span style="--i:4">C</span><span style="--i:5">O</span><span style="--i:6">N</span></div>
+    <div class="i-line"></div>
+    <div class="i-tag">Estructura · Cumplimiento · Tecnología</div>
+    <div class="i-marks"><img src="/assets/marcas/mark/eje-legal.png" alt="" style="--i:0"><img src="/assets/marcas/mark/innova-web.png" alt="" style="--i:1"><img src="/assets/marcas/mark/boss-studio.png" alt="" style="--i:2"><img src="/assets/marcas/mark/punto-inmuebles.png" alt="" style="--i:3"><img src="/assets/marcas/mark/plano-y-obra.png" alt="" style="--i:4"><img src="/assets/marcas/mark/punto-control.png" alt="" style="--i:5"></div>
+  </div>
+  <div class="i-skip">Toque para entrar</div>
 </div>
+<div id="progress" aria-hidden="true"></div>
 
-<nav class="fixed w-full z-50 px-6 md:px-20 py-2 flex justify-between items-center">
-    <a href="#"><img src="logo.png" alt="LICICON" class="h-[50px] md:h-[85px]"></a>
-    
-    <div class="hidden lg:flex space-x-12 text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 items-center">
-        <a href="#que-hacemos" class="nav-link">Qué Hacemos</a>
-        <a href="#especializacion" class="nav-link">Especialización</a>
-        <a href="#sectores" class="nav-link">Sectores</a>
-        <a href="#metodologia" class="nav-link">Metodología</a>
-        <a href="#plataformas" class="nav-link">Plataformas</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
-        <a href="https://conformita.licicon.com" target="_blank" class="btn-luxe ml-4">Diagnóstico Gratuito</a>
-    </div>
-
-    <button class="lg:hidden text-gold text-2xl" onclick="toggleMenu(true)"><i class="fas fa-bars"></i></button>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brandmark" href="#top" aria-label="LICICON, inicio"><img src="/assets/licicon-emblema.png" alt="" width="34" height="34"><span>LICICON</span></a>
+    <nav class="links" aria-label="Principal">
+      <a href="#grupo">Grupo</a>
+      <a href="#firmas">Firmas</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#casos">Casos</a>
+      <a href="#desarrollos">Desarrollos</a>
+      <a href="/blog/">Publicaciones</a>
+      <a class="cta-s" href="#contacto">Contacto</a>
+    </nav>
+    <button class="burger" type="button" id="burger" aria-controls="overlay" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+<nav class="overlay" id="overlay" inert aria-hidden="true" aria-label="Menú">
+  <a href="#grupo" style="--i:0">Grupo</a>
+  <a href="#firmas" style="--i:1">Firmas</a>
+  <a href="#servicios" style="--i:2">Servicios</a>
+  <a href="#casos" style="--i:3">Casos</a>
+  <a href="#desarrollos" style="--i:4">Desarrollos</a>
+  <a href="/blog/" style="--i:5">Publicaciones</a>
+  <a href="#contacto" style="--i:6">Contacto</a>
 </nav>
 
-<div id="mobile-menu" class="fixed inset-0 bg-black z-[100] flex flex-col justify-center items-center space-y-8">
-    <button class="absolute top-8 right-8 text-gold text-3xl" onclick="toggleMenu(false)">&times;</button>
-    <a href="#que-hacemos" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Qué Hacemos</a>
-    <a href="#especializacion" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Especialización</a>
-    <a href="#sectores" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Sectores</a>
-    <a href="#metodologia" class="serif-title text-xl text-white" onclick="toggleMenu(false)">Metodología</a>
-    <a href="https://conformita.licicon.com" target="_blank" class="btn-luxe">Diagnóstico</a>
-</div>
-
-<section class="relative min-h-screen flex items-center px-6 md:px-24" style="background: linear-gradient(to bottom, rgba(5,7,10,0.85), rgba(5,7,10,1)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') center/cover;">
-    <div class="max-w-6xl pt-20" data-aos="fade-up">
-        <div class="w-24 h-1 mb-10 bg-gold" style="background:var(--accent-gold)"></div>
-        <h2 class="text-gold text-[10px] md:text-xs tracking-[.6em] uppercase font-bold mb-6 opacity-80" style="color:var(--accent-gold)">Smart Asset Management & Compliance</h2>
-        <h1 class="serif-title text-3xl md:text-[80px] leading-tight md:leading-[0.95] mb-10">
-            Arquitectura de <span class="gold-gradient-text">Cumplimiento</span><br>
-            <span class="text-slate-200">Institucional.</span>
-        </h1>
-        <p class="max-w-4xl text-slate-400 text-base md:text-xl font-light leading-relaxed border-l-2 border-gold/30 pl-8 italic">
-            LICICON es una firma especializada en gestión estratégica de activos, cumplimiento normativo y optimización institucional, enfocada en proteger el valor patrimonial de empresas, inversiones y operaciones comerciales.
-        </p>
-    </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<section id="que-hacemos" class="px-6 md:px-24 py-20 md:py-32">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-        <div data-aos="fade-right">
-            <h2 class="serif-title text-3xl md:text-4xl mb-10 uppercase tracking-widest">Qué <span class="gold-gradient-text">Hacemos</span></h2>
-            <p class="text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-light">
-                Diseñamos e implementamos modelos institucionales de gestión orientados a proteger el valor de los activos empresariales y optimizar su operación. Trabajamos con organizaciones que requieren orden, control y cumplimiento bajo estándares internacionales.
-            </p>
-            <div class="blue-gold-card p-8 md:p-12 text-center">
-                <p class="serif-title text-xl md:text-2xl italic opacity-80">"LICICON no solo gestiona activos: estructura sistemas institucionales que garantizan su permanencia."</p>
-            </div>
-        </div>
-        <div data-aos="fade-left">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070" class="asset-photo rounded shadow-2xl">
-        </div>
-    </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<section id="sectores" class="px-6 md:px-24 py-20 md:py-32 bg-slate-950/20">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-20">
-            <h2 class="serif-title text-3xl md:text-4xl mb-4 uppercase tracking-widest">Diversificación de <span class="gold-gradient-text">Activos</span></h2>
-            <p class="text-slate-600 tracking-[.5em] uppercase text-[10px] font-bold">Gobernanza Multidominio</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="blue-gold-card p-12 text-center" data-aos="fade-up" onclick="openSector('corp')">
-                <i class="fas fa-plus plus-icon"></i>
-                <i class="fas fa-building-columns text-5xl mb-8"></i>
-                <p class="text-[11px] tracking-[.3em] uppercase font-bold text-slate-400">Corporativo</p>
-                <div class="card-indicator">Explorar Aplicaciones <i class="fas fa-arrow-right ml-1"></i></div>
-            </div>
-            <div class="blue-gold-card p-12 text-center" data-aos="fade-up" data-aos-delay="100" onclick="openSector('real')">
-                <i class="fas fa-plus plus-icon"></i>
-                <i class="fas fa-city text-5xl mb-8"></i>
-                <p class="text-[11px] tracking-[.3em] uppercase font-bold text-slate-400">Real Estate</p>
-                <div class="card-indicator">Explorar Aplicaciones <i class="fas fa-arrow-right ml-1"></i></div>
-            </div>
-            <div class="blue-gold-card p-12 text-center" data-aos="fade-up" data-aos-delay="150" onclick="openSector('smart')">
-                <i class="fas fa-plus plus-icon"></i>
-                <i class="fas fa-network-wired text-5xl mb-8"></i>
-                <p class="text-[11px] tracking-[.3em] uppercase font-bold text-slate-400">Smart Operations</p>
-                <div class="card-indicator">Explorar Aplicaciones <i class="fas fa-arrow-right ml-1"></i></div>
-            </div>
-            <div class="blue-gold-card p-12 text-center" data-aos="fade-up" data-aos-delay="200" onclick="openSector('tech')">
-                <i class="fas fa-plus plus-icon"></i>
-                <i class="fas fa-microchip text-5xl mb-8"></i>
-                <p class="text-[11px] tracking-[.3em] uppercase font-bold text-slate-400">Tech Assets</p>
-                <div class="card-indicator">Explorar Aplicaciones <i class="fas fa-arrow-right ml-1"></i></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="especializacion" class="px-6 md:px-24 py-20 md:py-32">
-    <div class="max-w-7xl mx-auto text-center">
-        <h2 class="serif-title text-3xl md:text-5xl mb-6 uppercase tracking-widest">Líneas <span class="gold-gradient-text">Estratégicas</span></h2>
-        <p class="text-slate-600 tracking-[.5em] uppercase text-[11px] font-bold mb-20">Áreas de Especialización</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up">
-                <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Asset Management</h3>
-                <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
-                    <li>· Administración Inmobiliaria</li>
-                    <li>· Modelos de Arrendamiento</li>
-                    <li>· Supervisión Contractual</li>
-                    <li>· Optimización Financiera</li>
-                </ul>
-            </div>
-            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Compliance</h3>
-                <div class="mb-6"><p class="text-[9px] text-gold/60 tracking-widest mb-4">ISO 27001 | 31000 | 9001 | 37301</p></div>
-                <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
-                    <li>· Diagnóstico Normativo</li>
-                    <li>· Implementación de Sistemas</li>
-                    <li>· Gestión de Riesgos</li>
-                    <li>· Protección Jurídica</li>
-                </ul>
-            </div>
-            <div class="blue-gold-card p-10 md:p-14 text-left" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="serif-title text-2xl mb-8 text-white border-b border-gold/20 pb-6 uppercase">Optimización</h3>
-                <ul class="text-[11px] space-y-4 text-slate-500 font-bold uppercase tracking-widest">
-                    <li>· Digitalización Administrativa</li>
-                    <li>· Automatización Documental</li>
-                    <li>· Control de Operaciones</li>
-                    <li>· Mejora Estructural</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="metodologia" class="px-6 md:px-24 py-20 md:py-32">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 md:mb-24">
-            <h2 class="serif-title text-3xl md:text-4xl mb-4 uppercase tracking-widest">Metodología de <span class="gold-gradient-text">Trabajo</span></h2>
-            <p class="text-slate-600 tracking-[.5em] uppercase text-[10px] font-bold">Rigor en cada etapa</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-16 md:gap-20 items-start">
-            <div class="space-y-12 md:space-y-16">
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
-                    <div>
-                        <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider" style="color:var(--accent-gold)">01. Diagnóstico</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Análisis de estructura documental, cumplimiento normativo y riesgos operativos bajo estándares ISO.</p>
-                    </div>
-                </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left" data-aos-delay="200">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
-                    <div>
-                        <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider" style="color:var(--accent-gold)">02. Arquitectura de Cumplimiento</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Diseño de la estructura jurídica, blindaje de activos y protocolos de control institucional.</p>
-                    </div>
-                </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left" data-aos-delay="400">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
-                    <div>
-                        <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider" style="color:var(--accent-gold)">03. Implementación</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Establecimiento de flujos documentales operativos y despliegue de sistemas de gestión.</p>
-                    </div>
-                </div>
-                <div class="step-item flex gap-8 border-l-2 border-gold/20 pl-8 md:pl-10 relative" data-aos="fade-left" data-aos-delay="600">
-                    <div class="step-node absolute -left-[11px] w-5 h-5 rounded-full bg-slate-950 border-2 border-gold" style="border-color:var(--accent-gold)"></div>
-                    <div>
-                        <h4 class="serif-title text-xl text-gold mb-3 uppercase tracking-wider" style="color:var(--accent-gold)">04. Monitoreo y Continuidad</h4>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">Auditoría de cumplimiento, mejora continua y supervisión de la vigencia institucional de los activos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden md:block sticky top-32" data-aos="zoom-in">
-                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070" class="asset-photo rounded shadow-2xl">
-            </div>
-        </div>
-    </div>
-</section>
+<main id="top">
+<!-- ================= HERO ================= -->
+<section class="hero"><img class="studio-hero-photo" src="/assets/studio/hero-arquitectura.jpg" alt="Arquitectura corporativa">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
     
-
-<!-- ===== PLATAFORMAS ===== -->
-<section id="plataformas" class="py-20 md:py-32 px-6 md:px-24 bg-slate-950/30">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <p class="text-[10px] uppercase tracking-[0.4em] text-gold/60 mb-4 font-bold">Ecosistema Tecnológico</p>
-            <h2 class="serif-title text-3xl md:text-5xl uppercase tracking-widest mb-6">Nuestras Plataformas</h2>
-            <div class="gold-divider max-w-xs mx-auto"></div>
+    <div class="hero-line"></div>
+    <h1><span class="ln"><span>Estructura,</span></span><span class="ln"><span>cumplimiento</span></span><span class="ln"><span><em>y tecnología.</em></span></span></h1>
+    <div class="hero-foot">
+      <div>
+        <p class="lead">Seis firmas especializadas en derecho, tecnología, marketing, inmuebles, construcción y administración, que trabajan bajo un mismo estándar de rigor jurídico y control operativo.</p>
+        <div class="actions">
+          <a class="btn" href="#firmas" onclick="return liciconGo('firmas')"><span>Conocer las firmas</span><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a>
+          <a class="btn ghost" href="#contacto" onclick="return liciconGo('contacto')"><span>Agendar una conversación</span></a>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            <!-- Catturare -->
-            <div class="blue-gold-card p-8 rounded-sm" data-aos="fade-up" data-aos-delay="100">
-                <div class="plus-icon"><i class="fas fa-plus"></i></div>
-                <div class="text-[9px] uppercase tracking-[0.4em] text-gold/50 font-bold mb-3">Real Estate</div>
-                <h3 class="serif-title text-2xl text-gold mb-2 tracking-widest">Catturare</h3>
-                <div class="h-[1px] w-8 bg-gold/30 mb-4"></div>
-                <p class="text-slate-400 text-sm font-light leading-relaxed mb-6">
-                    Plataforma inteligente de gestión inmobiliaria. Capta propiedades, genera leads, publica con IA y cierra más rápido.
-                </p>
-                <div class="space-y-2 text-[10px] text-slate-500 uppercase tracking-wider mb-8">
-                    <div>· Generación de descripciones con IA</div>
-                    <div>· Dashboard de leads en tiempo real</div>
-                    <div>· Landing pública por propiedad</div>
-                    <div>· Integración directa con WhatsApp</div>
-                </div>
-                <a href="https://catturare.licicon.com" target="_blank" class="btn-luxe text-[8px]">Acceder →</a>
-                <div class="card-indicator">Capturar · Gestionar · Cerrar</div>
-            </div>
-
-            <!-- Certezza -->
-            <div class="blue-gold-card p-8 rounded-sm" data-aos="fade-up" data-aos-delay="200">
-                <div class="plus-icon"><i class="fas fa-plus"></i></div>
-                <div class="text-[9px] uppercase tracking-[0.4em] text-gold/50 font-bold mb-3">Construcción</div>
-                <h3 class="serif-title text-2xl text-gold mb-2 tracking-widest">Certezza</h3>
-                <div class="h-[1px] w-8 bg-gold/30 mb-4"></div>
-                <p class="text-slate-400 text-sm font-light leading-relaxed mb-6">
-                    Control institucional de obra. Catálogo desde Excel, avance diario, semáforos financieros, bitácora legal y PDF de estimación.
-                </p>
-                <div class="space-y-2 text-[10px] text-slate-500 uppercase tracking-wider mb-8">
-                    <div>· Importación de catálogo desde Excel</div>
-                    <div>· Alertas de fuga financiera</div>
-                    <div>· Bitácora legal con evidencia fotográfica</div>
-                    <div>· PDF de estimación automático</div>
-                </div>
-                <span class="btn-luxe text-[8px] opacity-60 cursor-default">Próximamente</span>
-                <div class="card-indicator">Precisión · Control · Trazabilidad</div>
-            </div>
-
-            <!-- Conformità -->
-            <div class="blue-gold-card p-8 rounded-sm" data-aos="fade-up" data-aos-delay="300">
-                <div class="plus-icon"><i class="fas fa-plus"></i></div>
-                <div class="text-[9px] uppercase tracking-[0.4em] text-gold/50 font-bold mb-3">Compliance</div>
-                <h3 class="serif-title text-2xl text-gold mb-2 tracking-widest">Conformità</h3>
-                <div class="h-[1px] w-8 bg-gold/30 mb-4"></div>
-                <p class="text-slate-400 text-sm font-light leading-relaxed mb-6">
-                    Diagnóstico normativo inteligente. 10 preguntas que identifican todas las obligaciones legales aplicables a tu empresa en México.
-                </p>
-                <div class="space-y-2 text-[10px] text-slate-500 uppercase tracking-wider mb-8">
-                    <div>· Módulo Amministrativo — base universal</div>
-                    <div>· Módulo Specifico — por giro</div>
-                    <div>· Módulo Misura — a la medida</div>
-                    <div>· Marco normativo completo México</div>
-                </div>
-                <a href="https://conformita.licicon.com" target="_blank" class="btn-luxe text-[8px]">Diagnóstico Gratuito →</a>
-                <div class="card-indicator">Cumplimiento · Protección · Certeza</div>
-            </div>
-
-        </div>
+      </div>
+      <div class="hero-marks" aria-label="Firmas del grupo"><a href="/eje-legal/" style="--i:0" title="Eje Legal"><img src="/assets/marcas/mark/eje-legal.png" alt="Eje Legal"></a><a href="/innova-web/" style="--i:1" title="Innova Web Studio"><img src="/assets/marcas/mark/innova-web.png" alt="Innova Web Studio"></a><a href="/boss-studio/" style="--i:2" title="Boss Social Studio"><img src="/assets/marcas/mark/boss-studio.png" alt="Boss Social Studio"></a><a href="/punto-inmuebles/" style="--i:3" title="Punto Inmuebles"><img src="/assets/marcas/mark/punto-inmuebles.png" alt="Punto Inmuebles"></a><a href="/plano-y-obra/" style="--i:4" title="Plano y Obra"><img src="/assets/marcas/mark/plano-y-obra.png" alt="Plano y Obra"></a><a href="/punto-control/" style="--i:5" title="Punto Control"><img src="/assets/marcas/mark/punto-control.png" alt="Punto Control"></a></div>
     </div>
+  </div>
 </section>
 
-<section id="filosofia" class="bg-slate-950/20 py-20 md:py-32 px-6 md:px-24">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-        <div data-aos="fade-right">
-            <h3 class="serif-title text-3xl md:text-4xl mb-10 uppercase tracking-widest">Filosofía</h3>
-            <p class="text-slate-400 text-xl md:text-2xl font-light leading-relaxed italic border-l-2 border-gold/30 pl-10 mb-10">
-                "La protección de un activo no depende únicamente de su propiedad jurídica, sino de la estructura institucional que lo respalda. Construimos estructuras sólidas que aseguran su permanencia."
-            </p>
-            <p class="text-slate-500 uppercase tracking-[0.3em] text-[10px] font-bold">LICICON Private Architecture</p>
-        </div>
-        <div data-aos="fade-left" class="book-container">
-            <div class="book-wrapper">
-                <div class="book-spine"></div>
-                <div class="book-cover">
-                    <img src="logo.png" class="w-48 mb-8 opacity-90">
-                    <div class="h-[1px] w-12 bg-gold mb-8"></div>
-                    <p class="serif-title text-gold text-center text-xs tracking-[0.4em] uppercase leading-loose">Architecture of<br>Institutional<br>Compliance</p>
-                </div>
-            </div>
-        </div>
+<!-- ================= GRUPO ================= -->
+<section class="sec studio-gallery"><div class="wrap"><span class="label" data-r>Un estudio integral</span><h2 class="serif" data-r>Seis miradas. Una misma dirección.</h2><div class="studio-gallery-grid"><a class="studio-scene" href="/innova-web/" data-r><img src="/assets/studio/innova-web.jpg" alt="Imagen ilustrativa de tecnología" loading="lazy"><span>Tecnología<i>↗</i></span></a><a class="studio-scene" href="/boss-studio/" data-r><img src="/assets/studio/boss-studio.jpg" alt="Imagen ilustrativa de comunicación" loading="lazy"><span>Comunicación<i>↗</i></span></a><a class="studio-scene" href="/punto-inmuebles/" data-r><img src="/assets/studio/punto-inmuebles.jpg" alt="Imagen ilustrativa de espacios" loading="lazy"><span>Espacios<i>↗</i></span></a><a class="studio-scene" href="/plano-y-obra/" data-r><img src="/assets/studio/plano-y-obra.jpg" alt="Imagen ilustrativa de construcción" loading="lazy"><span>Construcción<i>↗</i></span></a><a class="studio-scene" href="/eje-legal/" data-r><img src="/assets/studio/eje-legal.jpg" alt="Imagen ilustrativa de estructura jurídica" loading="lazy"><span>Estructura jurídica<i>↗</i></span></a><a class="studio-scene" href="/punto-control/" data-r><img src="/assets/studio/punto-control.jpg" alt="Imagen ilustrativa de control operativo" loading="lazy"><span>Control operativo<i>↗</i></span></a></div></div></section>
+<section class="sec" id="grupo">
+  <div class="wrap">
+    <div class="grupo">
+      <div>
+        <span class="label" data-r>El grupo</span>
+        <blockquote data-r style="--d:120;margin-top:22px">La protección de un activo no depende solo de quién es su dueño, sino de la <em>estructura</em> que lo respalda.</blockquote>
+      </div>
+      <div class="txt">
+        <p data-r style="--d:200">LICICON nace de una convicción: las empresas pierden valor por falta de orden, no por falta de talento. Contratos mal redactados, obligaciones legales ignoradas, obras sin control y sistemas que nadie documenta.</p>
+        <p data-r style="--d:280">Por eso reunimos bajo una sola dirección a firmas que resuelven cada frente del negocio, dirigidas por un abogado con más de quince años de experiencia en contratación pública, cumplimiento normativo y desarrollo de software.</p>
+        <p data-r style="--d:360">El resultado es un servicio que ninguna firma aislada puede ofrecer: la solución técnica y su respaldo legal, diseñados al mismo tiempo.</p>
+      </div>
     </div>
+    <figure class="editorial-photo" data-r><img src="/assets/studio/studio-integral.jpg" alt="Imagen ilustrativa de un estudio de trabajo integral" loading="lazy"><figcaption>Un estudio integral. Una misma dirección.</figcaption></figure>
+    <div class="pillars">
+      <div class="pillar" data-r><h3>Derecho</h3><p>Cada servicio del grupo nace con su soporte jurídico: contratos, avisos de privacidad y cumplimiento incluidos.</p></div>
+      <div class="pillar" data-r style="--d:120"><h3>Tecnología</h3><p>Desarrollamos nuestras propias plataformas para medir, documentar y automatizar lo que otros llevan en papel.</p></div>
+      <div class="pillar" data-r style="--d:240"><h3>Control</h3><p>Trabajamos con procesos basados en estándares ISO: diagnóstico, implementación, evidencia y seguimiento.</p></div>
+    </div>
+  </div>
 </section>
 
-
-<!-- ===== CONTACTO ===== -->
-<section id="contacto" class="py-20 md:py-32 px-6 md:px-24 bg-slate-950/40">
-    <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <p class="text-[10px] uppercase tracking-[0.4em] text-gold/60 mb-4 font-bold">Hablemos</p>
-            <h2 class="serif-title text-3xl md:text-5xl uppercase tracking-widest mb-6">Contacto</h2>
-            <div class="gold-divider max-w-xs mx-auto"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-
-            <!-- Info -->
-            <div data-aos="fade-right">
-                <p class="text-slate-400 text-base font-light leading-relaxed mb-10">
-                    ¿Tu empresa necesita orden institucional? ¿Quieres saber qué leyes aplican a tu operación? ¿Tienes una obra o activo inmobiliario que requiere control profesional?
-                </p>
-                <p class="text-slate-400 text-base font-light leading-relaxed mb-12 italic border-l-2 border-gold/30 pl-6">
-                    "Respondemos en menos de 24 horas. Sin compromiso."
-                </p>
-
-                <!-- WhatsApp directo -->
-                <a href="https://wa.me/5215521379039?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20LICICON." target="_blank"
-                   class="inline-flex items-center gap-4 bg-[#25D366]/10 border border-[#25D366]/30 px-8 py-4 hover:bg-[#25D366]/20 transition mb-6 w-full justify-center md:justify-start">
-                    <i class="fab fa-whatsapp text-[#25D366] text-2xl"></i>
-                    <div>
-                        <div class="text-[9px] uppercase tracking-[0.3em] text-[#25D366]/70 font-bold">WhatsApp Directo</div>
-                        <div class="text-white text-sm font-bold">+52 55 2137 9039</div>
-                    </div>
-                </a>
-
-                <a href="mailto:contactolicicon@gmail.com"
-                   class="inline-flex items-center gap-4 border border-gold/20 px-8 py-4 hover:border-gold/50 transition w-full justify-center md:justify-start">
-                    <i class="fas fa-envelope text-gold text-xl"></i>
-                    <div>
-                        <div class="text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold">Correo</div>
-                        <div class="text-white text-sm font-bold">contactolicicon@gmail.com</div>
-                    </div>
-                </a>
-
-                <div class="mt-10 text-[9px] uppercase tracking-[0.3em] text-slate-600 font-bold">
-                    Ciudad de México · Toluca · Estado de México
-                </div>
-            </div>
-
-            <!-- Formulario -->
-            <div data-aos="fade-left">
-                <form action="https://formspree.io/f/mlgadkge" method="POST" id="contactForm">
-                    <div class="mb-6">
-                        <label class="block text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold mb-2">Nombre completo</label>
-                        <input type="text" name="nombre" required placeholder="Tu nombre"
-                               class="w-full bg-slate-900/50 border border-gold/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-gold/40 transition placeholder:text-slate-600">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold mb-2">Correo electrónico</label>
-                        <input type="email" name="email" required placeholder="tu@empresa.com"
-                               class="w-full bg-slate-900/50 border border-gold/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-gold/40 transition placeholder:text-slate-600">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold mb-2">Empresa</label>
-                        <input type="text" name="empresa" placeholder="Nombre de tu empresa"
-                               class="w-full bg-slate-900/50 border border-gold/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-gold/40 transition placeholder:text-slate-600">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold mb-2">¿En qué podemos ayudarte?</label>
-                        <select name="servicio" class="w-full bg-slate-900/50 border border-gold/10 text-slate-400 text-sm px-4 py-3 focus:outline-none focus:border-gold/40 transition">
-                            <option value="">Selecciona un servicio</option>
-                            <option value="conformita">Diagnóstico normativo — Conformità</option>
-                            <option value="catturare">Gestión inmobiliaria — Catturare</option>
-                            <option value="certezza">Control de obra — Certezza</option>
-                            <option value="compliance">Compliance ISO</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="mb-8">
-                        <label class="block text-[9px] uppercase tracking-[0.3em] text-gold/60 font-bold mb-2">Mensaje</label>
-                        <textarea name="mensaje" rows="4" placeholder="Cuéntanos brevemente tu situación..."
-                                  class="w-full bg-slate-900/50 border border-gold/10 text-white text-sm px-4 py-3 focus:outline-none focus:border-gold/40 transition placeholder:text-slate-600 resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="btn-luxe w-full text-center py-4">
-                        ENVIAR MENSAJE →
-                    </button>
-                    <div id="form-success" class="hidden mt-4 text-center text-[10px] uppercase tracking-[0.3em] text-[#25D366] font-bold">
-                        ✓ Mensaje enviado — Te contactamos en menos de 24h
-                    </div>
-                </form>
-            </div>
-
-        </div>
+<!-- ================= FIRMAS ================= -->
+<section class="sec" id="firmas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label" data-r>Firmas</span><h2 data-r style="--d:100">Seis firmas.<br>Un mismo estándar.</h2></div>
+      <p data-r style="--d:200">Cada firma conserva su identidad, su equipo y su forma de atender. Lo que comparten es el método, el respaldo legal y la exigencia de resultados verificables.</p>
     </div>
+    <div class="firms">
+<a class="firm" href="/eje-legal/" data-r style="--d:0">
+  <span class="mk"><span class="bg" style="background:#fcf9f4"></span><img class="m" src="/assets/marcas/mark/eje-legal.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/eje-legal-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Derecho</span><h3>Eje Legal</h3></span>
+  <p class="ds">Asesoría legal personal y empresarial con enfoque preventivo: contratos, cumplimiento laboral REPSE, protección de datos personales y programas de compliance.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+<a class="firm" href="/innova-web/" data-r style="--d:70">
+  <span class="mk"><span class="bg" style="background:#030406"></span><img class="m" src="/assets/marcas/mark/innova-web.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/innova-web-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Tecnología</span><h3>Innova Web Studio</h3></span>
+  <p class="ds">Diseño y desarrollo de sitios, tiendas en línea y sistemas a la medida, con SEO técnico y organización documental según el alcance del proyecto.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+<a class="firm" href="/boss-studio/" data-r style="--d:140">
+  <span class="mk"><span class="bg" style="background:#050608"></span><img class="m" src="/assets/marcas/mark/boss-studio.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/boss-studio-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Marketing</span><h3>Boss Social Studio</h3></span>
+  <p class="ds">Gestión de redes sociales, contenido y publicidad digital para negocios que quieren ser la primera opción de su cliente.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+<a class="firm" href="/punto-inmuebles/" data-r style="--d:210">
+  <span class="mk"><span class="bg" style="background:#f7f4ef"></span><img class="m" src="/assets/marcas/mark/punto-inmuebles.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/punto-inmuebles-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Inmobiliario</span><h3>Punto Inmuebles</h3></span>
+  <p class="ds">Compra, venta, renta y administración de inmuebles con revisión legal de cada operación y acompañamiento hasta la firma.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+<a class="firm" href="/plano-y-obra/" data-r style="--d:280">
+  <span class="mk"><span class="bg" style="background:#f5f4f1"></span><img class="m" src="/assets/marcas/mark/plano-y-obra.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/plano-y-obra-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Construcción</span><h3>Plano y Obra</h3></span>
+  <p class="ds">Construcción residencial y comercial, remodelación integral y seguimiento de obra con Certezza, con presupuesto por conceptos y bitácora con evidencia.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+<a class="firm" href="/punto-control/" data-r style="--d:350">
+  <span class="mk"><span class="bg" style="background:#f9f9f9"></span><img class="m" src="/assets/marcas/mark/punto-control.png" alt="" loading="lazy"><img class="c" src="/assets/marcas/mark/punto-control-color.jpg" alt="" loading="lazy"></span>
+  <span class="nm"><span class="label">Administración</span><h3>Punto Control</h3></span>
+  <p class="ds">Administración, contabilidad y facturación para pequeñas y medianas empresas, con reportes mensuales para decidir con datos.</p>
+  <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span>
+</a>
+    </div>
+  </div>
 </section>
 
-<footer class="bg-black pt-20 md:pt-32 pb-16 px-6 md:px-20 border-t border-gold/10">
-
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center md:text-left">
-        
-        <div class="flex flex-col items-center md:items-start">
-            <img src="logo.png" class="h-20 md:h-24 w-auto mb-8">
-        </div>
-
-        <div>
-            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Navegación</h4>
-            <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
-                <li><a href="#que-hacemos" class="hover:text-gold transition">Qué Hacemos</a></li>
-                <li><a href="#sectores" class="hover:text-gold transition">Sectores</a></li>
-                <li><a href="#metodologia" class="hover:text-gold transition">Metodología</a></li>
-                <li><a href="#plataformas" class="hover:text-gold transition">Plataformas</a></li>
-                <li><a href="https://catturare.licicon.com" target="_blank" class="hover:text-gold transition">Catturare</a></li>
-                <li><a href="https://conformita.licicon.com" target="_blank" class="hover:text-gold transition">Conformità</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Estándares</h4>
-            <ul class="space-y-4 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
-                <li>ISO 27001 Seguridad</li>
-                <li>ISO 37301 Compliance</li>
-                <li>ISO 31000 Gestión de Riesgos</li>
-            </ul>
-        </div>
-
-        <div>
-            <h4 class="serif-title text-gold text-xs tracking-widest mb-10 uppercase">Contacto</h4>
-
-            <a href="https://conformita.licicon.com" target="_blank" class="text-white text-[12px] font-bold hover:text-gold transition block mb-8">
-                CONTACTO@LICICON.COM
-            </a>
-
-            <div class="flex justify-center md:justify-start space-x-8 text-gold text-xl">
-                <a href="https://www.linkedin.com/company/licicon-consultoria-especializada" target="_blank"><i class="fab fa-linkedin-in hover:scale-110 transition text-gold"></i></a>
-                <a href="https://wa.me/5215521379039?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20LICICON." target="_blank"><i class="fab fa-whatsapp hover:scale-110 transition text-gold"></i></a>
-            </div>
-        </div>
-
+<!-- ================= SERVICIOS ================= -->
+<section class="sec" id="servicios" style="background:var(--c1)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label" data-r>Servicios</span><h2 data-r style="--d:100">Todo lo que hacemos, firma por firma.</h2></div>
+      <p data-r style="--d:200">Selecciona una firma para ver el detalle de sus servicios. Cada uno puede contratarse de forma independiente o como parte de un proyecto integral.</p>
     </div>
+    <div class="tabs" role="tablist" aria-label="Firmas" data-r>
+<button class="tab" role="tab" id="t-eje-legal" aria-controls="p-eje-legal" aria-selected="true" tabindex="0">Eje Legal</button>
+<button class="tab" role="tab" id="t-innova-web" aria-controls="p-innova-web" aria-selected="false" tabindex="-1">Innova Web Studio</button>
+<button class="tab" role="tab" id="t-boss-studio" aria-controls="p-boss-studio" aria-selected="false" tabindex="-1">Boss Social Studio</button>
+<button class="tab" role="tab" id="t-punto-inmuebles" aria-controls="p-punto-inmuebles" aria-selected="false" tabindex="-1">Punto Inmuebles</button>
+<button class="tab" role="tab" id="t-plano-y-obra" aria-controls="p-plano-y-obra" aria-selected="false" tabindex="-1">Plano y Obra</button>
+<button class="tab" role="tab" id="t-punto-control" aria-controls="p-punto-control" aria-selected="false" tabindex="-1">Punto Control</button>
+      <span class="tab-ind" id="tabInd"></span>
+    </div>
+    <div class="panels">
+<div class="panel on" role="tabpanel" id="p-eje-legal" aria-labelledby="t-eje-legal">
+  <figure class="service-panorama"><img src="/assets/studio/eje-legal.jpg" alt="Imagen ilustrativa de Eje Legal" loading="lazy"></figure>
+  <aside><span class="label">Derecho</span><h3>Eje Legal</h3><p>Contratos, cumplimiento laboral y fiscal, protección de datos y defensa de tu patrimonio. Te explicamos qué dice la ley y qué te conviene hacer, sin tecnicismos.</p>
+    <div class="lk"><a href="/eje-legal/">Visitar Eje Legal <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/eje-legal/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Asesoría legal integral</h4><p>Revisamos tu caso, te explicamos los riesgos reales y las rutas posibles con costos y tiempos estimados. Sirve para personas y para empresas que necesitan una segunda opinión antes de firmar o decidir.</p><ul><li>Diagnóstico por escrito</li><li>Opciones con pros y contras</li><li>Seguimiento por WhatsApp</li></ul></div><div class="svc-item" style="--i:1"><h4>Contratos</h4><p>Arrendamiento, prestación de servicios, compraventa, confidencialidad, obra y sociedades. Cuidamos cláusulas de pago, penalizaciones, terminación y jurisdicción, según el objeto y los riesgos del acuerdo.</p><ul><li>Revisión de contratos que te envían</li><li>Contratos a la medida</li><li>Plantillas para tu negocio</li></ul></div><div class="svc-item" style="--i:2"><h4>Cumplimiento REPSE</h4><p>Registro y renovación ante la STPS, revisión de objeto social, contratos de servicios especializados y control documental de tus proveedores para identificar requisitos y riesgos aplicables a cada contratación.</p><ul><li>Registro y renovación REPSE</li><li>Revisión de proveedores</li><li>Contratos de servicios especializados</li></ul></div><div class="svc-item" style="--i:3"><h4>Protección de datos personales</h4><p>Si tu negocio recaba nombres, teléfonos o correos, la ley te obliga a informar para qué los usas. Elaboramos tu aviso de privacidad, tus políticas internas y el procedimiento para atender solicitudes ARCO.</p><ul><li>Aviso de privacidad integral y simplificado</li><li>Políticas internas</li><li>Procedimiento ARCO</li></ul></div><div class="svc-item" style="--i:4"><h4>Compliance empresarial</h4><p>Diagnóstico de obligaciones legales según tu giro, mapa de riesgos y programa de cumplimiento con referencia a ISO 37301 e ISO 31000. El alcance del diagnóstico se acuerda antes de iniciar.</p><ul><li>Diagnóstico normativo</li><li>Matriz de riesgos</li><li>Programa de cumplimiento</li></ul></div></div>
+</div>
+<div class="panel" role="tabpanel" id="p-innova-web" aria-labelledby="t-innova-web">
+  <figure class="service-panorama"><img src="/assets/studio/innova-web.jpg" alt="Imagen ilustrativa de Innova Web Studio" loading="lazy"></figure>
+  <aside><span class="label">Tecnología</span><h3>Innova Web Studio</h3><p>Diseñamos y programamos sitios, tiendas en línea y sistemas a la medida. Cada proyecto sale con su aviso de privacidad y lo básico de SEO resuelto desde el día uno.</p>
+    <div class="lk"><a href="/innova-web/">Visitar Innova Web Studio <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/innova-web/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Diseño web</h4><p>Partimos de tu marca y de lo que tu cliente necesita encontrar para decidir. Diseñamos la estructura, los textos clave y la interfaz antes de programar.</p><ul><li>Estructura y textos</li><li>Diseño visual a tu marca</li><li>Dominio y correo profesional</li></ul></div><div class="svc-item" style="--i:1"><h4>Páginas web responsivas</h4><p>La mayoría de tus visitas llegan desde el teléfono. Probamos cada página en pantallas chicas, con botones de WhatsApp y llamada al alcance del pulgar.</p><ul><li>Diseño mobile first</li><li>Botón de WhatsApp</li><li>Mapa y datos de contacto</li></ul></div><div class="svc-item" style="--i:2"><h4>Tiendas online</h4><p>Configuramos tu tienda en Shopify o a la medida, con catálogo, pasarela de pago, envíos y políticas de compra y devolución.</p><ul><li>Catálogo y variantes</li><li>Pagos y envíos</li><li>Políticas de tienda</li></ul></div><div class="svc-item" style="--i:3"><h4>Velocidad y rendimiento</h4><p>Optimizamos imágenes, carga de fuentes y código para que tu sitio abra rápido incluso con datos móviles. Medimos antes y después.</p><ul><li>Optimización de imágenes</li><li>Medición de Core Web Vitals</li><li>Hosting adecuado</li></ul></div><div class="svc-item" style="--i:4"><h4>SEO y posicionamiento</h4><p>Configuramos títulos, descripciones, datos estructurados, sitemap y Google Search Console, y te ayudamos a planear contenido para búsquedas locales.</p><ul><li>SEO técnico</li><li>Google Business Profile</li><li>Plan de contenido</li></ul></div><div class="svc-item" style="--i:5"><h4>Soporte y mantenimiento</h4><p>Cambios de contenido, respaldos, renovación de dominio y atención a fallas con un pago mensual fijo.</p><ul><li>Cambios mensuales</li><li>Respaldos</li><li>Atención por WhatsApp</li></ul></div></div>
+</div>
+<div class="panel" role="tabpanel" id="p-boss-studio" aria-labelledby="t-boss-studio">
+  <figure class="service-panorama"><img src="/assets/studio/boss-studio.jpg" alt="Imagen ilustrativa de Boss Social Studio" loading="lazy"></figure>
+  <aside><span class="label">Marketing</span><h3>Boss Social Studio</h3><p>Manejamos las redes sociales de tu negocio: contenido, promociones, publicidad y WhatsApp Business, para que tus clientes piensen en ti primero.</p>
+    <div class="lk"><a href="/boss-studio/">Visitar Boss Social Studio <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/boss-studio/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Gestión de redes sociales</h4><p>Planeamos el mes, diseñamos y publicamos en Facebook, Instagram y TikTok. Tú apruebas antes de que salga.</p><ul><li>Calendario mensual</li><li>Diseño de publicaciones</li><li>Publicación y programación</li></ul></div><div class="svc-item" style="--i:1"><h4>Creación de contenido</h4><p>Hacemos sesiones en tu negocio para tener material propio: producto, equipo, proceso. El material propio ayuda a mostrar tu negocio de forma reconocible.</p><ul><li>Sesiones de foto y video</li><li>Reels y videos cortos</li><li>Tomas con dron</li></ul></div><div class="svc-item" style="--i:2"><h4>Publicidad digital</h4><p>Campañas en Facebook e Instagram segmentadas por colonia, edad e intereses, con presupuesto controlado y reporte del gasto y de los resultados que puedan medirse.</p><ul><li>Campañas locales</li><li>Promociones</li><li>Reporte de resultados</li></ul></div><div class="svc-item" style="--i:3"><h4>Estrategia de marca</h4><p>Definimos tono, mensajes clave, lema y estilo visual para que todo lo que publicas se sienta de la misma marca.</p><ul><li>Tono y mensajes</li><li>Lema</li><li>Guía visual básica</li></ul></div><div class="svc-item" style="--i:4"><h4>Comunidad y WhatsApp Business</h4><p>Configuramos WhatsApp Business con catálogo, respuestas rápidas, etiquetas y listas de difusión, y te ayudamos a responder comentarios y mensajes.</p><ul><li>Catálogo y respuestas rápidas</li><li>Listas de difusión</li><li>Atención de comentarios</li></ul></div><div class="svc-item" style="--i:5"><h4>Análisis y resultados</h4><p>Un reporte sencillo con alcance, mensajes recibidos y consultas y resultados atribuibles cuando exista información para medirlos, para decidir el siguiente mes con datos.</p><ul><li>Reporte mensual</li><li>Recomendaciones</li><li>Ajuste de estrategia</li></ul></div></div>
+</div>
+<div class="panel" role="tabpanel" id="p-punto-inmuebles" aria-labelledby="t-punto-inmuebles">
+  <figure class="service-panorama"><img src="/assets/studio/punto-inmuebles.jpg" alt="Imagen ilustrativa de Punto Inmuebles" loading="lazy"></figure>
+  <aside><span class="label">Inmobiliario</span><h3>Punto Inmuebles</h3><p>Te acompañamos de principio a fin: precio, promoción, documentos y firma. Cada operación pasa por una revisión legal para que cierres sin sorpresas.</p>
+    <div class="lk"><a href="/punto-inmuebles/">Visitar Punto Inmuebles <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/punto-inmuebles/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Asesoría personalizada</h4><p>Analizamos el inmueble, la zona y tu objetivo para definir un precio realista y la mejor estrategia: vender, rentar o esperar.</p><ul><li>Opinión de valor</li><li>Estrategia de venta o renta</li><li>Estimación de gastos e impuestos</li></ul></div><div class="svc-item" style="--i:1"><h4>Compra, venta y renta</h4><p>Fotografía, publicación en portales, filtro de interesados, visitas y negociación. Te informamos de cada avance.</p><ul><li>Fotos y publicación</li><li>Filtro de prospectos</li><li>Negociación</li></ul></div><div class="svc-item" style="--i:2"><h4>Gestión integral</h4><p>Cobro de rentas, contratos, mantenimiento y atención a inquilinos para propietarios que no quieren ocuparse del día a día.</p><ul><li>Cobranza</li><li>Mantenimiento</li><li>Renovación de contratos</li></ul></div><div class="svc-item" style="--i:3"><h4>Revisión legal de la operación</h4><p>Revisamos escrituras, gravámenes, contratos de promesa y arrendamiento, con apoyo de Eje Legal, para que el patrimonio quede protegido.</p><ul><li>Revisión de escrituras</li><li>Contratos de promesa y arrendamiento</li><li>Acompañamiento con notario</li></ul></div><div class="svc-item" style="--i:4"><h4>Soluciones a tu medida</h4><p>Inmuebles intestados, con varios dueños o con documentación incompleta. Te decimos qué hay que regularizar antes de venderlo.</p><ul><li>Diagnóstico documental</li><li>Ruta de regularización</li><li>Venta una vez regularizado</li></ul></div></div>
+</div>
+<div class="panel" role="tabpanel" id="p-plano-y-obra" aria-labelledby="t-plano-y-obra">
+  <figure class="service-panorama"><img src="/assets/studio/plano-y-obra.jpg" alt="Imagen ilustrativa de Plano y Obra" loading="lazy"></figure>
+  <aside><span class="label">Construcción</span><h3>Plano y Obra</h3><p>Construimos y remodelamos espacios residenciales y comerciales con un proceso claro: catálogo de conceptos, avance medido y bitácora con evidencia.</p>
+    <div class="lk"><a href="/plano-y-obra/">Visitar Plano y Obra <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/plano-y-obra/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Construcción residencial</h4><p>Coordinamos proyecto, permisos y ejecución, con presupuesto por conceptos y calendario de obra desde el inicio.</p><ul><li>Casa nueva</li><li>Ampliaciones y segundos niveles</li><li>Permisos y licencias</li></ul></div><div class="svc-item" style="--i:1"><h4>Construcción comercial</h4><p>Adecuación de locales y oficinas con tiempos cortos y coordinación con tu operación para no detener el negocio.</p><ul><li>Locales y oficinas</li><li>Adecuaciones</li><li>Obra por etapas</li></ul></div><div class="svc-item" style="--i:2"><h4>Remodelación integral</h4><p>Diseño, demolición, instalaciones y acabados con un solo responsable, para que no tengas que coordinar cinco proveedores.</p><ul><li>Cocinas y baños</li><li>Instalaciones</li><li>Acabados</li></ul></div><div class="svc-item" style="--i:3"><h4>Planeación y ejecución</h4><p>Catálogo de conceptos, programa de obra y supervisión técnica. Útil también si ya tienes constructor y quieres a alguien de tu lado.</p><ul><li>Catálogo de conceptos</li><li>Programa de obra</li><li>Supervisión</li></ul></div><div class="svc-item" style="--i:4"><h4>Control de obra digital</h4><p>Nuestra plataforma propia registra el avance diario contra el catálogo, alerta desviaciones de costo y guarda la bitácora con fotos. Al final tienes un expediente completo.</p><ul><li>Avance diario</li><li>Alertas de costo</li><li>Bitácora con fotos</li></ul></div></div>
+</div>
+<div class="panel" role="tabpanel" id="p-punto-control" aria-labelledby="t-punto-control">
+  <figure class="service-panorama"><img src="/assets/studio/punto-control.jpg" alt="Imagen ilustrativa de Punto Control" loading="lazy"></figure>
+  <aside><span class="label">Administración</span><h3>Punto Control</h3><p>Administración, contabilidad y facturación para pequeñas y medianas empresas. Sabes cuánto ganas, cuánto debes y cuánto te deben, cada mes.</p>
+    <div class="lk"><a href="/punto-control/">Visitar Punto Control <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a><a href="/punto-control/blog/">Publicaciones <svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></aside>
+  <div class="svc-list"><div class="svc-item" style="--i:0"><h4>Administración</h4><p>Ordenamos cómo entra y sale el dinero de tu negocio: cobranza, pagos a proveedores, caja chica y calendario de obligaciones.</p><ul><li>Cuentas por cobrar y pagar</li><li>Calendario de pagos</li><li>Control de caja</li></ul></div><div class="svc-item" style="--i:1"><h4>Contabilidad</h4><p>Organización de registros, conciliaciones y coordinación de obligaciones con el profesional contable responsable.</p><ul><li>Organización de información contable</li><li>Conciliación bancaria</li><li>Declaraciones</li></ul></div><div class="svc-item" style="--i:2"><h4>Facturación CFDI</h4><p>Emisión de facturas, complementos de pago y notas de crédito, y revisión documental; la deducibilidad depende de requisitos fiscales y de cada operación.</p><ul><li>Facturas y complementos de pago</li><li>Revisión de facturas recibidas</li><li>Cancelaciones</li></ul></div><div class="svc-item" style="--i:3"><h4>Control y crecimiento</h4><p>Presupuesto, flujo de efectivo y márgenes por producto o servicio, para saber qué te deja dinero y qué no.</p><ul><li>Flujo de efectivo</li><li>Presupuesto</li><li>Márgenes</li></ul></div><div class="svc-item" style="--i:4"><h4>Reportes de resultados</h4><p>Cada mes recibes un resumen con ventas, gastos, utilidad y pendientes, explicado en lenguaje sencillo.</p><ul><li>Reporte mensual</li><li>Indicadores clave</li><li>Reunión de revisión</li></ul></div></div>
+</div>
+    </div>
+  </div>
+</section>
 
-    <p class="mt-20 text-center text-[8px] text-slate-800 tracking-[0.8em] uppercase">
-        © LICICON PRIVATE ARCHITECTURE 2026 &nbsp;·&nbsp; <button onclick="document.getElementById('privacyModal').style.display='block';document.body.style.overflow='hidden'" style="background:none;border:none;color:rgba(212,175,55,0.4);cursor:pointer;font-family:Montserrat,sans-serif;font-size:8px;letter-spacing:0.8em;text-transform:uppercase;text-decoration:underline">Aviso de Privacidad</button>
-    </p>
+<!-- ================= CASOS ================= -->
+<section class="sec" id="casos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label" data-r>Casos</span><h2 data-r style="--d:100">Trabajo que ya está en operación.</h2></div>
+      <p data-r style="--d:200">Algunos de los proyectos que hemos desarrollado para empresas e instituciones. Cada uno combina la especialidad de una o varias firmas del grupo.</p>
+    </div>
+    <div class="cases">
+<article class="case" data-r>
+  <div class="who"><span class="label">Agencia de branding y marketing</span><h3>MARXION</h3><span class="where">México</span></div>
+  <div class="story"><h4>El reto</h4><p>Una agencia de marca necesitaba un sitio a la altura del trabajo que vende a sus clientes y una base legal sólida para su relación comercial con ellos.</p><h4>Lo que hicimos</h4><p>Diseñamos y desarrollamos su sitio, configuramos su dominio y lo publicamos en infraestructura de alto rendimiento. En paralelo, Eje Legal preparó su propuesta de iguala y el paquete documental para operar con clientes.</p></div>
+  <div class="meta"><ul><li>Sitio web corporativo</li><li>Dominio marxion.mx</li><li>Paquete documental legal</li></ul><p class="by">Con <a href="/innova-web/">Innova Web Studio</a> y <a href="/eje-legal/">Eje Legal</a></p><a class="visit" href="https://marxion.mx" target="_blank" rel="noopener">Ver proyecto <svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6"/></svg></a></div>
+</article>
+<article class="case" data-r>
+  <div class="who"><span class="label">Capacitación en emergencias médicas</span><h3>iReanimación</h3><span class="where">Ciudad de México</span></div>
+  <div class="story"><h4>El reto</h4><p>Una institución de capacitación clínica en urgencias y reanimación necesitaba mostrar su oferta de cursos y mantener su calendario al día sin depender de un programador para cada fecha nueva.</p><h4>Lo que hicimos</h4><p>Desarrollamos su sitio institucional e integramos su calendario de Google: cada curso que el equipo agenda aparece publicado automáticamente, organizado por mes y por tipo de capacitación.</p></div>
+  <div class="meta"><ul><li>Sitio institucional</li><li>Calendario de cursos automático</li><li>Integración a medida con Google</li></ul><p class="by">Con <a href="/innova-web/">Innova Web Studio</a></p><a class="visit" href="https://reanimacion.org" target="_blank" rel="noopener">Ver proyecto <svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6"/></svg></a></div>
+</article>
+<article class="case" data-r>
+  <div class="who"><span class="label">Congreso médico internacional</span><h3>Medical Summit Cozumel</h3><span class="where">Cozumel, Quintana Roo</span></div>
+  <div class="story"><h4>El reto</h4><p>Un congreso médico internacional requería un sitio capaz de presentar a sus ponentes, publicar el programa y recibir registros, y de crecer conforme se confirmaba la agenda.</p><h4>Lo que hicimos</h4><p>Construimos el sitio oficial del congreso con perfiles de ponentes, agenda, registro de asistentes y sección de patrocinadores, con actualizaciones continuas durante la preparación del evento.</p></div>
+  <div class="meta"><ul><li>Sitio oficial del congreso</li><li>Perfiles de ponentes y agenda</li><li>Registro y patrocinadores</li></ul><p class="by">Con <a href="/innova-web/">Innova Web Studio</a></p><a class="visit" href="https://ms-cozumel.org" target="_blank" rel="noopener">Ver proyecto <svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6"/></svg></a></div>
+</article>
+<article class="case" data-r>
+  <div class="who"><span class="label">Artesanía y cerámica mexicana</span><h3>Dúo Raíces</h3><span class="where">México</span></div>
+  <div class="story"><h4>El reto</h4><p>Una marca de cerámica y talavera vendía en Shopify con una plantilla genérica que no contaba la historia artesanal detrás de cada pieza.</p><h4>Lo que hicimos</h4><p>Diseñamos una portada propia para la marca y la integramos al tema de Shopify como secciones editables: historia, pilares, manifiesto, colección y valores, sin perder las funciones de la tienda.</p></div>
+  <div class="meta"><ul><li>Diseño de portada de marca</li><li>Secciones Shopify a la medida</li><li>Tienda editable por la clienta</li></ul><p class="by">Con <a href="/innova-web/">Innova Web Studio</a></p></div>
+</article>
+<article class="case" data-r>
+  <div class="who"><span class="label">Mantenimiento, automatización y obra civil industrial</span><h3>SPIMEX<span class="st">En curso</span></h3><span class="where">Tula de Allende, Hidalgo</span></div>
+  <div class="story"><h4>El reto</h4><p>Una empresa de servicios industriales necesitaba presentar con claridad sus capacidades técnicas ante clientes corporativos y licitaciones.</p><h4>Lo que hicimos</h4><p>Desarrollamos su sitio corporativo con la presentación de sus líneas de servicio, experiencia y canales de contacto directo para áreas de compras.</p></div>
+  <div class="meta"><ul><li>Sitio corporativo</li><li>Presentación de servicios industriales</li><li>Contacto para compras</li></ul><p class="by">Con <a href="/innova-web/">Innova Web Studio</a></p></div>
+</article>
+    </div>
+  </div>
+</section>
 
+<!-- ================= DESARROLLOS ================= -->
+<section class="sec" id="desarrollos" style="background:var(--c1)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label" data-r>Desarrollos propios</span><h2 data-r style="--d:100">Plataformas construidas en casa.</h2></div>
+      <p data-r style="--d:200">No revendemos software de terceros. Diseñamos, programamos y operamos nuestras propias herramientas, y las adaptamos a cada cliente con su propia instancia y sus propios datos.</p>
+    </div>
+    <figure class="editorial-photo digital-photo" data-r><img src="/assets/studio/innova-web.jpg" alt="Imagen ilustrativa de desarrollo digital" loading="lazy"><figcaption>Tecnología desarrollada para resolver necesidades reales.</figcaption></figure>
+    <div class="dev-grid">
+<article class="dev" data-r style="--d:0"><span class="label">Control institucional de proyectos y obra</span><h3>Certezza</h3><p>Levantamiento, catálogo, precios unitarios, programas, insumos, evidencia, bitácora, estimaciones, informes y portal del cliente. Módulos y sincronización según la versión implementada.</p><span class="by">Desarrollado por <a href="/plano-y-obra/">Plano y Obra</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Operación de restaurantes</span><h3>Comanda</h3><p>Pedidos por mesero, QR por mesa, cocina, tickets y cuenta. La operación local o en internet se define por implementación.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Operación ligera de restaurantes</span><h3>Comanda Lite</h3><p>Variante orientada al flujo de meseros, cocina y administración, con seguimiento de pedidos.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Servicio de mesa para alta cocina</span><h3>Jun 順</h3><p>Proyecto de organización del servicio por mesa y comensal, dirigido a restaurantes de servicio fino.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Fidelización digital y NFC</span><h3>Pasaporte del Sabor</h3><p>Sellos digitales y experiencias NFC para reconocer visitas y recompensas en cafeterías y negocios de alimentos.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Atención médica digital</span><h3>Homoni</h3><p>Agenda, videoconsulta, expediente, recetas y seguimiento. La implementación requiere definir procesos y medidas para el tratamiento de datos de salud.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Asistencia para atención médica</span><h3>Homoni AI</h3><p>Proyecto de asistentes, resúmenes y pendientes para acompañar al médico y al paciente. No sustituye el criterio clínico.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Seguimiento entre consultas</span><h3>Homoni Pocket</h3><p>Proyecto de seguimiento médico sin depender de una videollamada.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Gestión jurídica</span><h3>Legal y Orden</h3><p>Casos, clientes, calendario, documentos, videoconsulta y portal del cliente, según el alcance de la implementación.</p><span class="by">Desarrollado por <a href="/eje-legal/">Eje Legal</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Automatización de documentos</span><h3>Contratto</h3><p>Proyecto de generación de contratos desde plantillas, con menor recaptura y revisión jurídica antes de su uso.</p><span class="by">Desarrollado por <a href="/eje-legal/">Eje Legal</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Gestión inmobiliaria</span><h3>Catturare</h3><p>Inventario, fichas de propiedades, publicación y seguimiento de oportunidades inmobiliarias.</p><span class="by">Desarrollado por <a href="/punto-inmuebles/">Punto Inmuebles</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Familia de seguimiento comercial</span><h3>Boss Pro · Boss Engine · Boss Go</h3><p>Proyectos CRM para organizar prospectos, etapas y resultados de la atención comercial.</p><span class="by">Desarrollado por <a href="/boss-studio/">Boss Social Studio</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Diagnóstico de cumplimiento</span><h3>Conformità</h3><p>Proyecto de diagnóstico y organización del cumplimiento institucional.</p><span class="by">Desarrollado por <a href="/eje-legal/">Eje Legal</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Movilidad vecinal</span><h3>2Ride</h3><p>Piloto de viajes compartidos, recorridos por asientos y reservas para comunidades. Integraciones y disponibilidad sujetas a desarrollo.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Comercio y servicios locales</span><h3>2iu</h3><p>Proyecto para reunir negocios y servicios de una comunidad, con atención digital y seguimiento de consultas.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Comunicación y seguimiento escolar</span><h3>Plataforma escolar</h3><p>Piloto de notificaciones, calendario y comunicación con familias, con una mascota colaborativa del plantel.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Atención digital de negocios</span><h3>Bandeja unificada</h3><p>Proyecto para concentrar conversaciones de clientes y asistentes. Las conexiones de canales dependen de permisos e integraciones oficiales.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:200"><span class="label">Productividad documental</span><h3>Herramientas PDF</h3><p>Proyecto de extracción de información y conversión de documentos para facilitar su uso.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:0"><span class="label">Prototipo experimental</span><h3>JARVIS personal</h3><p>Asistente personal de voz con una interfaz tecnológica; iniciativa experimental.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+<article class="dev" data-r style="--d:100"><span class="label">Concepto experimental</span><h3>Solid Eye</h3><p>Exploración de una interfaz monocular para información y notificaciones; concepto en investigación.</p><span class="by">Desarrollado por <a href="/innova-web/">Innova Web Studio</a></span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÉTODO ================= -->
+<section class="sec" id="metodo">
+  <div class="wrap method">
+    <div class="sticky">
+      <span class="label" data-r>Método</span>
+      <h2 class="serif" data-r style="--d:100;font-size:clamp(38px,5.2vw,72px);line-height:1.02;margin:14px 0 24px">Rigor en cada etapa.</h2>
+      <p data-r style="--d:200;color:var(--muted);max-width:44ch">El mismo proceso ordena un contrato, una obra o un sistema. Nada se ejecuta sin diagnóstico y nada se entrega sin evidencia.</p>
+    </div>
+    <ol class="steps" id="steps">
+      <span class="fill" aria-hidden="true"></span>
+      <li class="step"><span class="n">i.</span><h3>Diagnóstico</h3><p>Revisamos la situación documental, legal y operativa, e identificamos riesgos y obligaciones aplicables con referencia a estándares ISO.</p></li>
+      <li class="step"><span class="n">ii.</span><h3>Arquitectura</h3><p>Diseñamos la solución completa: estructura jurídica, procesos, herramientas y costos, aprobada por escrito antes de ejecutar.</p></li>
+      <li class="step"><span class="n">iii.</span><h3>Implementación</h3><p>Ejecutamos con responsables definidos, calendario y registro de cada avance en nuestras plataformas.</p></li>
+      <li class="step"><span class="n">iv.</span><h3>Continuidad</h3><p>Medimos resultados, auditamos el cumplimiento y ajustamos. El orden se sostiene, no se instala una sola vez.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= MARCOS ================= -->
+<section class="sec" id="marco" style="background:var(--c1)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label" data-r>Marcos de referencia</span><h2 data-r style="--d:100">Normas con las que trabajamos.</h2></div>
+      <p data-r style="--d:200">Nuestros procesos se diseñan con referencia a estándares internacionales y a la legislación mexicana aplicable a cada sector.</p>
+    </div>
+    <div class="norms">
+      <div class="norm" data-r><b>ISO 9001</b><span>Gestión de la calidad</span></div>
+      <div class="norm" data-r style="--d:80"><b>ISO 27001</b><span>Seguridad de la información</span></div>
+      <div class="norm" data-r style="--d:160"><b>ISO 37301</b><span>Sistemas de gestión de compliance</span></div>
+      <div class="norm" data-r style="--d:240"><b>ISO 31000</b><span>Gestión de riesgos</span></div>
+      <div class="norm" data-r><b>ISO 19650</b><span>Gestión de información en construcción</span></div>
+      <div class="norm" data-r style="--d:80"><b>LFPDPPP</b><span>Protección de datos personales</span></div>
+      <div class="norm" data-r style="--d:160"><b>REPSE</b><span>Servicios especializados</span></div>
+      <div class="norm" data-r style="--d:240"><b>LOPSRM</b><span>Obra pública y servicios relacionados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="sec" id="contacto">
+  <div class="wrap contact">
+    <div class="txt">
+      <span class="label" data-r>Contacto</span>
+      <h2 data-r style="--d:100">Conversemos sobre su proyecto.</h2>
+      <p data-r style="--d:200">Cuéntenos su situación y le indicaremos qué firma del grupo puede atenderla. Le responderemos para acordar el siguiente paso.</p>
+      <div class="chan" data-r style="--d:300">
+        <a href="https://wa.me/5215521379039?text=Hola%2C%20me%20interesa%20conocer%20los%20servicios%20del%20Grupo%20LICICON." target="_blank" rel="noopener"><div><small>WhatsApp</small><span>+52 55 2137 9039</span></div><svg viewBox="0 0 18 18"><path d="M3 15L15 3M7 3h8v8"/></svg></a>
+        <a href="mailto:contactolicicon@licicon.com"><div><small>Correo</small><span>contactolicicon@licicon.com</span></div><svg viewBox="0 0 18 18"><path d="M3 15L15 3M7 3h8v8"/></svg></a>
+      </div>
+    </div>
+    <figure class="contact-photo" data-r><img src="/assets/studio/contacto-lounge.jpg" alt="Imagen ilustrativa de un espacio de reunión" loading="lazy"></figure>
+    <form action="https://formspree.io/f/mlgadkge" method="POST" id="contactForm" data-r style="--d:200">
+      <div class="f"><input id="fn" type="text" name="nombre" required placeholder=" " autocomplete="name"><label for="fn">Nombre completo</label></div>
+      <div class="f"><input id="fe" type="email" name="email" required placeholder=" " autocomplete="email"><label for="fe">Correo electrónico</label></div>
+      <div class="f"><input id="fc" type="text" name="empresa" placeholder=" " autocomplete="organization"><label for="fc">Empresa</label></div>
+      <div class="f sel"><select id="fs" name="servicio">
+        <option value="">Selecciona una opción</option>
+        <option value="eje-legal">Eje Legal · Asesoría legal personal y empresarial</option>
+        <option value="innova-web">Innova Web Studio · Diseño y desarrollo web</option>
+        <option value="boss-studio">Boss Social Studio · Redes sociales y marketing para negocios</option>
+        <option value="punto-inmuebles">Punto Inmuebles · Soluciones inmobiliarias</option>
+        <option value="plano-y-obra">Plano y Obra · Construcción y remodelación</option>
+        <option value="punto-control">Punto Control · Administración y contabilidad</option>
+        <option value="integral">Proyecto integral / varias firmas</option>
+        <option value="otro">Otro</option>
+      </select><label for="fs">Firma de interés</label></div>
+      <div class="f"><textarea id="fm" name="mensaje" rows="4" placeholder=" "></textarea><label for="fm">Mensaje</label></div>
+      <p style="font-size:12px;color:var(--dim);margin:-6px 0 26px">Al enviar este formulario acepta que tratemos sus datos para atender su solicitud, conforme a nuestro <a href="/aviso-de-privacidad/" style="color:var(--muted);border-bottom:1px solid var(--gold-line)">aviso de privacidad</a>.</p>
+      <button class="btn" type="submit"><span>Enviar mensaje</span><svg viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button>
+      <p class="ok" id="formOk" role="status">Mensaje enviado. Le contactaremos para dar seguimiento.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brandmark" href="#top"><img src="/assets/licicon-emblema.png" alt="" width="34" height="34"><span>LICICON</span></a>
+        <p>Estructura, cumplimiento y tecnología para el patrimonio de las empresas. Toluca, Metepec y Ciudad de México.</p>
+      </div>
+      <div><h4>Firmas</h4><ul><li><a href="/eje-legal/">Eje Legal</a></li><li><a href="/innova-web/">Innova Web Studio</a></li><li><a href="/boss-studio/">Boss Social Studio</a></li><li><a href="/punto-inmuebles/">Punto Inmuebles</a></li><li><a href="/plano-y-obra/">Plano y Obra</a></li><li><a href="/punto-control/">Punto Control</a></li></ul></div>
+      <div><h4>Grupo</h4><ul><li><a href="#grupo">El grupo</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#casos">Casos</a></li><li><a href="#desarrollos">Desarrollos</a></li><li><a href="#metodo">Método</a></li><li><a href="/blog/">Publicaciones</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="https://wa.me/5215521379039" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:contactolicicon@licicon.com">Correo</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 LICICON. Todos los derechos reservados.</span><span class="lg"><a href="/aviso-de-privacidad/">Aviso de privacidad</a><a href="/politica-de-cookies/">Política de cookies</a></span></div>
+  </div>
 </footer>
 
 
-
-
-<!-- AVISO DE PRIVACIDAD MODAL -->
-<div id="privacyModal" style="display:none;position:fixed;inset:0;background:rgba(5,7,10,0.98);backdrop-filter:blur(15px);z-index:200;overflow-y:auto;">
-  <div style="max-width:760px;margin:40px auto;padding:40px 24px;border:1px solid rgba(212,175,55,0.2);background:#05070a;position:relative;">
-    <button onclick="document.getElementById('privacyModal').style.display='none';document.body.style.overflow='auto'"
-      style="position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(212,175,55,0.6);font-size:20px;cursor:pointer;font-family:Montserrat,sans-serif">[X]</button>
-
-    <p style="font-family:Montserrat,sans-serif;font-size:8px;letter-spacing:3px;color:rgba(212,175,55,0.6);margin-bottom:12px">LICICON · CUMPLIMIENTO NORMATIVO</p>
-    <h2 style="font-family:Cinzel,serif;font-size:28px;color:#D4AF37;margin-bottom:4px;letter-spacing:3px">AVISO DE PRIVACIDAD</h2>
-    <p style="font-family:Montserrat,sans-serif;font-size:10px;color:rgba(232,228,218,0.4);letter-spacing:2px;margin-bottom:32px">En cumplimiento a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares</p>
-
-    <div style="height:1px;background:linear-gradient(to right,transparent,rgba(212,175,55,0.3),transparent);margin-bottom:28px"></div>
-
-    <div style="font-family:Montserrat,sans-serif;font-size:12px;color:rgba(232,228,218,0.7);line-height:2;space-y:16px">
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">I. IDENTIDAD Y DOMICILIO DEL RESPONSABLE</strong><br>
-      LICICON, nombre comercial operado por <strong style="color:#e8e4da">Roberto Amaral Ponce</strong>, persona física con actividad empresarial, con domicilio en Ciudad de México y Toluca, Estado de México, y correo electrónico de contacto: <strong style="color:#e8e4da">contactolicicon@gmail.com</strong></p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">II. DATOS PERSONALES QUE SE RECABAN</strong><br>
-      LICICON podrá recabar los siguientes datos personales: nombre completo, correo electrónico, nombre de empresa, número telefónico y cualquier información que el titular proporcione voluntariamente a través de los formularios de contacto y diagnóstico normativo disponibles en licicon.com, catturare.licicon.com y conformita.licicon.com.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">III. FINALIDADES DEL TRATAMIENTO</strong><br>
-      Los datos personales recabados serán utilizados para las siguientes finalidades primarias: (a) atender solicitudes de información y contacto; (b) proveer los servicios de diagnóstico normativo, gestión de activos y control de obra; (c) enviar comunicaciones relacionadas con los servicios solicitados. Finalidades secundarias: envío de información comercial sobre servicios de LICICON, previa obtención de consentimiento expreso.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">IV. TRANSFERENCIA DE DATOS</strong><br>
-      LICICON no transferirá sus datos personales a terceros sin su consentimiento, salvo las excepciones previstas en el artículo 37 de la LFPDPPP, incluyendo aquellas transferencias necesarias para el funcionamiento de herramientas tecnológicas como Formspree Inc. para el procesamiento de formularios de contacto, bajo sus propias políticas de privacidad.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">V. DERECHOS ARCO</strong><br>
-      Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (Derechos ARCO). Para ejercerlos, envíe su solicitud al correo <strong style="color:#e8e4da">contactolicicon@gmail.com</strong> indicando: nombre completo, datos de contacto, descripción clara del derecho a ejercer y documentos que acrediten su identidad. LICICON responderá en un plazo máximo de 20 días hábiles.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">VI. USO DE COOKIES Y TECNOLOGÍAS DE RASTREO</strong><br>
-      Este sitio web utiliza cookies y tecnologías similares para mejorar la experiencia de navegación. Se utilizan fuentes tipográficas de Google Fonts y librerías de animación (AOS) que pueden recopilar datos de navegación de forma anónima. Usted puede configurar su navegador para rechazar cookies; sin embargo, esto podría afectar la funcionalidad del sitio.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">VII. CAMBIOS AL AVISO DE PRIVACIDAD</strong><br>
-      LICICON se reserva el derecho de modificar el presente aviso de privacidad. Cualquier cambio será notificado a través de licicon.com. Se recomienda revisar periódicamente esta página.</p>
-
-      <p style="margin-bottom:20px"><strong style="color:#D4AF37;letter-spacing:1px">VIII. AUTORIDAD</strong><br>
-      Si considera que su derecho a la protección de datos personales ha sido vulnerado, puede acudir al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) en www.inai.org.mx.</p>
-
-    </div>
-
-    <div style="height:1px;background:linear-gradient(to right,transparent,rgba(212,175,55,0.3),transparent);margin:28px 0"></div>
-    <p style="font-family:Montserrat,sans-serif;font-size:9px;color:rgba(232,228,218,0.3);letter-spacing:2px;text-align:center">Última actualización: Abril 2026 · LICICON · contactolicicon@gmail.com</p>
-  </div>
-</div>
-
-<!-- COOKIE BANNER -->
-<div id="cookieBanner" style="position:fixed;bottom:0;left:0;right:0;background:rgba(5,7,10,0.97);border-top:1px solid rgba(212,175,55,0.2);padding:16px 24px;z-index:150;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
-  <p style="font-family:Montserrat,sans-serif;font-size:10px;color:rgba(232,228,218,0.6);letter-spacing:1px;flex:1;min-width:200px">
-    Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando acepta su uso.
-    <button onclick="document.getElementById('privacyModal').style.display='block';document.body.style.overflow='hidden'"
-      style="background:none;border:none;color:#D4AF37;cursor:pointer;font-family:Montserrat,sans-serif;font-size:10px;letter-spacing:1px;text-decoration:underline;padding:0">Ver aviso de privacidad</button>
-  </p>
-  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookiesAccepted','true')"
-    style="background:#D4AF37;color:#05070a;border:none;padding:8px 20px;font-family:Montserrat,sans-serif;font-size:9px;letter-spacing:2px;font-weight:700;cursor:pointer;white-space:nowrap">
-    ACEPTAR
-  </button>
+<div id="cookieBanner" role="region" aria-label="Aviso de cookies">
+  <p>Este sitio usa almacenamiento técnico e integra Google Tag Manager para gestionar etiquetas de medición. <a class="lnk" href="/politica-de-cookies/">Política de cookies</a></p>
+  <button class="acc" type="button" id="cookieOk">Entendido</button>
 </div>
 
 <script>
-if(localStorage.getItem('cookiesAccepted')) document.getElementById('cookieBanner').style.display='none';
-</script>
+window.liciconGo=function(id){
+ var t=document.getElementById(id);if(!t)return true;
+ document.body.classList.remove('menu-open');document.body.style.overflow='';document.documentElement.style.overflow='';
+ var intro=document.getElementById('intro');if(intro)intro.remove();
+ var y=t.getBoundingClientRect().top+window.scrollY-90;
+ window.scrollTo({top:Math.max(0,y),behavior:'instant'});
+ t.classList.add('in');t.querySelectorAll('[data-r]').forEach(function(el){el.classList.add('in')});
+ return false;
+};
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
-<div id="sectorModal" class="modal">
-    <div class="modal-content text-center">
-        <span class="close-modal absolute top-4 right-4 text-gold cursor-pointer" onclick="closeSector()">[X]</span>
-        <i id="m-icon" class="fas text-4xl mb-6 text-gold"></i>
-        <h3 id="m-title" class="serif-title text-2xl mb-6 uppercase gold-gradient-text"></h3>
-        <p id="m-desc" class="text-slate-400 text-sm font-light leading-relaxed mb-8"></p>
-        <ul id="m-list" class="text-left text-[11px] text-slate-500 space-y-2 uppercase tracking-wider bg-slate-900/50 p-6 border border-gold/5"></ul>
-    </div>
-</div>
+  // Carga orquestada
+  var intro=document.getElementById('intro'),ss={get:function(k){try{return sessionStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{sessionStorage.setItem(k,v)}catch(e){}}};
+  function start(){document.documentElement.classList.add('loaded')}
+  if(!intro||reduce||ss.get('introVisto')){if(intro)intro.remove();requestAnimationFrame(function(){setTimeout(start,80)})}
+  else{
+    document.body.style.overflow='hidden';var done=false,t=setTimeout(leave,4300);
+    function leave(){if(done)return;done=true;clearTimeout(t);ss.set('introVisto','1');intro.classList.add('out');document.body.style.overflow='';
+      setTimeout(start,450);setTimeout(function(){intro.remove()},1300)}
+    intro.addEventListener('click',leave);addEventListener('keydown',function k(e){if(e.key==='Escape'||e.key==='Enter'||e.key===' '){leave();removeEventListener('keydown',k)}});
+  }
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    window.addEventListener('load', () => {
-        const preloader = document.getElementById('preloader');
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => { preloader.style.visibility = 'hidden'; AOS.init({duration:1200, once:true}); }, 1000);
-        }, 2500);
-    });
+  // Navegación y progreso
+  var nav=document.getElementById('nav'),prog=document.getElementById('progress');
+  function onScroll(){
+    var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+    nav.classList.toggle('solid',y>40);
+    prog.style.transform='scaleX('+(h>0?y/h:0)+')';
+    stepsProgress();
+  }
+  addEventListener('scroll',onScroll,{passive:true});
 
-    function toggleMenu(open) {
-        document.getElementById('mobile-menu').classList.toggle('open', open);
-    }
+  // Menú móvil
+  var burger=document.getElementById('burger');
+  var overlay=document.getElementById('overlay');
+  function menu(o){document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',String(o));burger.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');overlay.inert=!o;overlay.setAttribute('aria-hidden',String(!o));document.body.style.overflow=o?'hidden':''}
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){menu(false);burger.focus()}});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');if(!a)return;
+    var href=a.getAttribute('href');if(href==='#aviso-de-privacidad')return;
+    var target=document.getElementById(href.slice(1));if(!target)return;
+    e.preventDefault();menu(false);target.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+  });
+  burger.onclick=function(){menu(!document.body.classList.contains('menu-open'))};
+  document.querySelectorAll('#overlay a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
 
-    const sectorData = {
-        'corp': { title: 'Corporativo', icon: 'fa-building-columns', desc: 'Gobernanza y cumplimiento normativo corporativo.', apps: ['Gobernanza', 'Control', 'Riesgos'] },
-        'real': { title: 'Real Estate', icon: 'fa-city', desc: 'Gestión estratégica de activos inmobiliarios.', apps: ['Administración', 'Contratos', 'Optimización'] },
-        'smart': { title: 'Smart Operations', icon: 'fa-network-wired', desc: 'Sistemas inteligentes de operación.', apps: ['Digitalización', 'Flujos', 'Automatización'] },
-        'tech': { title: 'Tech Assets', icon: 'fa-microchip', desc: 'Gestión y protección de activos tecnológicos.', apps: ['Seguridad', 'ISO', 'Gobernanza Tech'] }
-    };
+  // Reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  document.querySelectorAll('[data-r]').forEach(function(el){io.observe(el)});
 
-    function openSector(key) {
-        const data = sectorData[key];
-        document.getElementById('m-title').innerText = data.title;
-        document.getElementById('m-desc').innerText = data.desc;
-        document.getElementById('m-icon').className = `fas ${data.icon} text-4xl mb-6 text-gold`;
-        document.getElementById('m-list').innerHTML = data.apps.map(a => `<li>• ${a}</li>`).join('');
-        document.getElementById('sectorModal').style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
+  // Sección activa en el menú
+  var links=[].slice.call(document.querySelectorAll('.links a[href^="#"]'));
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s)});
 
-    // Formspree AJAX
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-        try {
-            const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
-            if (res.ok) {
-                form.reset();
-                document.getElementById('form-success').classList.remove('hidden');
-                setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 5000);
-            }
-        } catch(err) { console.error(err); }
-    });
+  // Pestañas de servicios
+  var tabs=[].slice.call(document.querySelectorAll('.tab')),ind=document.getElementById('tabInd');
+  function place(t){ind.style.left=t.offsetLeft+'px';ind.style.width=t.offsetWidth+'px'}
+  function sel(t,focus){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on',on)});
+    place(t);if(focus)t.focus();
+    t.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(k){e.preventDefault();sel(tabs[(i+k+tabs.length)%tabs.length],true)}});
+  });
+  if(tabs[0]){setTimeout(function(){place(tabs[0])},300);addEventListener('resize',function(){var a=document.querySelector('.tab[aria-selected="true"]');if(a)place(a)})}
 
-    function closeSector() {
-        document.getElementById('sectorModal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
+  // Luz en desarrollos
+  document.querySelectorAll('.dev').forEach(function(d){d.addEventListener('pointermove',function(e){var r=d.getBoundingClientRect();d.style.setProperty('--mx',(e.clientX-r.left)+'px');d.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+  // Línea del método
+  var steps=document.getElementById('steps'),stepEls=[].slice.call(document.querySelectorAll('.step'));
+  function stepsProgress(){
+    if(!steps)return;var r=steps.getBoundingClientRect(),mid=innerHeight*.6;
+    var p=Math.max(0,Math.min(1,(mid-r.top)/r.height));steps.style.setProperty('--p',p);
+    stepEls.forEach(function(s){s.classList.toggle('lit',s.getBoundingClientRect().top<mid)});
+  }
+  onScroll();
+
+  // Formulario
+  var form=document.getElementById('contactForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}}).then(function(r){
+      if(r.ok){form.reset();var ok=document.getElementById('formOk');ok.classList.add('show');setTimeout(function(){ok.classList.remove('show')},6000)}
+    }).catch(function(){});
+  });
+
+  // Cookies y aviso
+  var cb=document.getElementById('cookieBanner');
+  if(!store.get('cookiesAccepted'))setTimeout(function(){cb.classList.add('show')},1800);else cb.style.display='none';
+  document.getElementById('cookieOk').onclick=function(){store.set('cookiesAccepted','true');cb.classList.remove('show');setTimeout(function(){cb.style.display='none'},800)};
+
+  // Red de puntos del hero
+  var cv=document.getElementById('net'),cx=cv.getContext('2d'),pts=[],W,H,dpr=Math.min(devicePixelRatio||1,2),mx=.5,my=.5,run=true;
+  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.round(Math.min(90,W*H/16000));pts=[];for(var i=0;i<n;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:Math.random()*1.1+.3})}
+  function draw(){
+    cx.clearRect(0,0,W,H);var ox=(mx-.5)*18,oy=(my-.5)*18,L=140;
+    for(var i=0;i<pts.length;i++){var p=pts[i];if(!reduce){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+      for(var j=i+1;j<pts.length;j++){var q=pts[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;if(d<L*L){cx.strokeStyle='rgba(212,175,55,'+(0.22*(1-Math.sqrt(d)/L))+')';cx.lineWidth=.6;cx.beginPath();cx.moveTo(p.x+ox,p.y+oy);cx.lineTo(q.x+ox,q.y+oy);cx.stroke()}}
+      cx.fillStyle='rgba(212,175,55,.7)';cx.beginPath();cx.arc(p.x+ox,p.y+oy,p.r,0,6.283);cx.fill()}
+    if(run&&!reduce)requestAnimationFrame(draw);
+  }
+  size();draw();addEventListener('resize',size);
+  addEventListener('pointermove',function(e){mx=e.clientX/innerWidth;my=e.clientY/innerHeight},{passive:true});
+  new IntersectionObserver(function(es){var v=es[0].isIntersecting;if(v&&!run){run=true;draw()}run=v}).observe(cv);
+})();
 </script>
 </body>
 </html>
